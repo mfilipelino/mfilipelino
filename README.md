@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @mfilipelino
 - 👀 I’m interested in Computer Science and Distributed Systems 
-- 🌱 I’m currently learning AWS for Dataengineer
+- 🌱 I’m currently learning AWS to solve problems as a Data Engineer.
 
 
 <!---
