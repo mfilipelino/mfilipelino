@@ -1,6 +1,5 @@
 - 👋 Hi, I’m @mfilipelino
 - 👀 I’m interested in Computer Science and Distributed Systems 
-- 🌱 I’m currently learning rust
 
 If you can't play, you can't learn
 <!---
