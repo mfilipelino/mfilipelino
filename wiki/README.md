@@ -1,6 +1,6 @@
 # AWS Cloud Fundamentals
 
-What is cloud computing?&#x20;
+### What is cloud computing?&#x20;
 
 
 
@@ -24,4 +24,24 @@ The problems you can solve if you decide to build your software company on top o
 There are different levels of IT solutions as a service, usually, the companies use a mix of those levels.
 
 <figure><img src=".gitbook/assets/data-center-vs-cloud-iaas-vs-paas-vs-saas.png" alt=""><figcaption><p>You manager vs Other manage</p></figcaption></figure>
+
+### What does cloud computing provide as a service?&#x20;
+
+* Cloud computing offers on-demand access to computing power, database storage, and various applications.
+* It operates on a pay-as-you-go pricing model, allowing you to pay only for the resources you actually use.
+* Resources can be quickly scaled up or down to meet changing demands, providing flexibility and agility.
+* Access is available over the internet from a variety of devices, making it highly accessible.
+* Maintenance, security, and updates are generally managed by the service provider, reducing the burden on your in-house team.
+
+### The five characteristics of cloud computing
+
+1. On-Demand Self-Service: Users can allocate and manage resources themselves without needing to interact with a human service provider.
+2. Broad Network Access: Cloud services are accessible over the internet from a variety of devices, such as laptops, smartphones, and tablets.
+3. Resource Pooling: Multiple users share a pool of computing resources, but these can be dynamically allocated and reassigned based on demand.
+4. Rapid Elasticity: Resources can be quickly scaled up or down to accommodate varying workloads and demands.
+5. Measured Service: Cloud systems automatically control and optimize resources, often using a metered, pay-as-you-go model.
+
+
+
+
 
