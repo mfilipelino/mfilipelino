@@ -120,6 +120,14 @@ Pay-as-you-go fundamental
 
 * Compute: Pay for compute time
 * Storage: Pay for data stored in the cloud
-* Data transfer OUT of the Coud:
-  * Data transfer IN is free&#x20;
+* Data transfer OUT of the Cloud: Data transfer IN is free&#x20;
 
+
+
+<details>
+
+<summary>Questions</summary>
+
+Answer&#x20;
+
+</details>
