@@ -1,3 +1,4 @@
 # Table of contents
 
-* [AWS Cloud Basics](README.md)
+* [AWS Cloud Fundamentals](README.md)
+* [Network fundamentals](network-fundamentals.md)
