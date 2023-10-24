@@ -6,3 +6,4 @@
 * [C Programing language](c-programing-language.md)
 * [AWS Well-Architected - Machine Learning Lens](aws-well-architected-machine-learning-lens.md)
 * [AWS Stepfunction](aws-stepfunction.md)
+* [Links to read/watch](links-to-read-watch.md)
