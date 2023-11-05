@@ -91,11 +91,9 @@ Two key metrics are:
 
 
 
-{% embed url="https://pages.awscloud.com/rs/112-TZM-766/images/Fairness.Measures.for.Machine.Learning.in.Finance.pdf" %}
+[Fairness Measures for Machine Learning](https://pages.awscloud.com/rs/112-TZM-766/images/Fairness.Measures.for.Machine.Learning.in.Finance.pdf)
 
-{% embed url="https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-measure-data-bias.html" %}
-
-
+[Measure pre-training bias - Amazon Sagemaker](https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-measure-data-bias.html)
 
 ### Approaches to Statistical Bias Detection
 
@@ -129,5 +127,4 @@ Various algorithms provide different methods to calculate feature importance. Fo
 
 {% embed url="https://shap.readthedocs.io/en/latest/" %}
 
-{% embed url="https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-measure-data-bias.html" %}
-
+{% embed url="https://www.youtube.com/watch?v=cTa5HYCxTVg&t=7s" %}
