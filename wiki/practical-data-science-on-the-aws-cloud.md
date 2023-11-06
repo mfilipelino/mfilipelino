@@ -4,13 +4,15 @@
 
 <figure><img src=".gitbook/assets/Screen Shot 2023-10-29 at 2.42.49 PM.png" alt=""><figcaption><p>Machine Learning Workflow</p></figcaption></figure>
 
-#### Common ML tasks
+### Popular ML tasks and learning paradigmas
 
 * **Supervised learning:** Classification & Regression&#x20;
 * **Unsupervised** Clustering
 * **Reinforcement learning**
+* **Computer vision**
+* **Text Analysis**
 
-
+<figure><img src=".gitbook/assets/Screen Shot 2023-11-06 at 8.42.46 AM.png" alt=""><figcaption></figcaption></figure>
 
 **The task:**
 
@@ -18,7 +20,7 @@ More specifically, you will perform multi-class classification for sentiment ana
 
 <figure><img src=".gitbook/assets/Screen Shot 2023-10-26 at 2.45.35 PM (2).png" alt=""><figcaption></figcaption></figure>
 
-### Data Bias and Feature Importance
+## Data Bias and Feature Importance
 
 * Describe the concept of data bias and compare popular bias metrics&#x20;
 * Demonstrate how to detect data bias
@@ -128,3 +130,77 @@ Various algorithms provide different methods to calculate feature importance. Fo
 {% embed url="https://shap.readthedocs.io/en/latest/" %}
 
 {% embed url="https://www.youtube.com/watch?v=cTa5HYCxTVg&t=7s" %}
+
+
+
+## Automated Machine Learning - AutoML&#x20;
+
+* Ability to reduce  Time to market&#x20;
+* Lack of ML skillsets&#x20;
+* Ability to iterate quickly&#x20;
+* Ability to optimize scarce resources for more challenging use cases
+
+[Autogluon](<README (1).md>)
+
+## Built-in algorithms
+
+* Summarize why and when to choose built-in algorithms
+* Describe the use case and algorithms
+* Understand the evolution of text analysis algorithms
+* Discuss word2vec, FastText and BlazingText algorithms
+* Transform raw review data into features to train a text classifier
+* Apply the Amazon SageMaker built-in BlazingText algorithm to train a text classifier
+* Deploy the text classifier and make predictions
+
+<figure><img src=".gitbook/assets/Screen Shot 2023-11-06 at 8.39.43 AM.png" alt=""><figcaption></figcaption></figure>
+
+### Why use built-in algorithms?
+
+* Implementation is highly highly-optimized and scalable (shift between CPU tp GPU as simple as a parameter of type of machine)&#x20;
+* Focus more on domain-specific tasks rather than managing low-level model code and infrastructure
+* Trained model can be downloaded and re-used elsewhere
+
+<figure><img src=".gitbook/assets/Screen Shot 2023-11-06 at 8.40.36 AM.png" alt=""><figcaption></figcaption></figure>
+
+### ML types tasks and built-in algorithms
+
+<figure><img src=".gitbook/assets/Screen Shot 2023-11-06 at 8.42.46 AM.png" alt=""><figcaption></figcaption></figure>
+
+
+
+### Classification and Regression - Tabular data
+
+
+
+<table><thead><tr><th width="318">Example problems and use cases</th><th width="237.33333333333331">Problem types</th><th>Built-in algorithms</th></tr></thead><tbody><tr><td>Predict if an item belongs to a category: an email spam filter</td><td>Binary/multi-class classification</td><td>XGBoost, K-Nearest Neighbors</td></tr><tr><td>Predict a numeric/continuous value: estimate the value of a house</td><td>Regression</td><td>Linear Learner, XGboost</td></tr><tr><td>Predict sales on a new product based on previous sales data</td><td>Time-series forecasting</td><td>DeepAR Forecasting</td></tr></tbody></table>
+
+### Clustering
+
+| Example problem and use cases                                             | Problema type                          | Built-in algorithms                                         |
+| ------------------------------------------------------------------------- | -------------------------------------- | ----------------------------------------------------------- |
+| Drop weak features such as the color of a car when predicting its mileage | Feature enginnering: reduce dimensions | Principal component analysis (PCA)                          |
+| Detect abnormal behavior                                                  | Anomaly detection                      | Random cut forest (RCF)                                     |
+| Group high/medium/low-spending customer from transaction histories        | Clustering / Grouping                  | K-Means                                                     |
+| Organize a set of documents into topics based on words and phares         | Topic modeling (NLP)                   | Latent Dirichlet Allocation (LDA), Neural Topic Model (NTM) |
+|                                                                           |                                        |                                                             |
+|                                                                           |                                        |                                                             |
+
+### Image processing
+
+| Example problems and uses cases                 | Problem types        | Buil-in algoritms                                       |
+| ----------------------------------------------- | -------------------- | ------------------------------------------------------- |
+| Content moderation                              | Image classification | Image classification (full training, transfer learning) |
+| Detect people and objects in an image           | Object detection     | Object detection                                        |
+| Self-driven cars identify objects in their path | Computer vision      | Semantic Segmentation                                   |
+
+### &#x20;Text analysis
+
+| Example problems and use cases       | Problem types       | Built-in algoritms   |
+| ------------------------------------ | ------------------- | -------------------- |
+| Convert spanish to english           | machine translation | sequence-to-sequence |
+| Summarize a research paper           | Text sumarization   | sequence-to-sequence |
+| Transcribe call center conversations | Speech-to-text      | Sequence-to-sequence |
+| Classify reviews into categories     | Text classification | Blazing Text         |
+
+
+
