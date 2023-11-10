@@ -140,7 +140,75 @@ Various algorithms provide different methods to calculate feature importance. Fo
 * Ability to iterate quickly&#x20;
 * Ability to optimize scarce resources for more challenging use cases
 
+SageMaker Autopilot will inspect the raw dataset, apply feature processors, pick the best set of algorithms, train and tune multiple models, and then rank the models based on performance - all with just a few clicks. Autopilot transparently generates a set of Python scripts and notebooks for a complete end-to-end pipeline including data analysis, candidate generation, feature engineering, and model training/tuning.
+
+SageMaker Autopilot job consists of the following high-level steps:
+
+* _Data analysis_ where the data is summarized and analyzed to determine which feature engineering techniques, hyper-parameters, and models to explore.
+* _Feature engineering_ where the data is scrubbed, balanced, combined, and split into train and validation.
+* _Model training and tuning_ where the top performing features, hyper-parameters, and models are selected and trained.
+
+<figure><img src=".gitbook/assets/autoML.png" alt=""><figcaption><p>AutoML</p></figcaption></figure>
+
+1. Extract
+
+```
+aws s3 cp 's3://dlai-practical-data-science/data/balanced/womens_clothing_ecommerce_reviews_balanced.csv' ./
+```
+
+```python
+path_autopilot = './womens_clothing_ecommerce_reviews_balanced_for_autopilot.csv'
+
+df[['sentiment', 'review_body']].to_csv(path_autopilot, 
+                                        sep=',', 
+                                        index=False)
+autopilot_train_s3_uri = sess.upload_data(bucket=bucket, key_prefix='autopilot/data', path=path_autopilot)
+autopilot_train_s3_uri
+```
+
+```python
+aimport time
+
+timestamp = int(time.time())
+auto_ml_job_name = 'automl-dm-{}'.format(timestamp)
+model_output_s3_uri = 's3://{}/autopilot'.format(bucket)
+
+max_candidates = 3
+
+automl = sagemaker.automl.automl.AutoML(
+    ### BEGIN SOLUTION - DO NOT delete this comment for grading purposes
+    target_attribute_name="sentiment", # Replace None
+    base_job_name=auto_ml_job_name, # Replace None
+    output_path=model_output_s3_uri, # Replace None
+    ### END SOLUTION - DO NOT delete this comment for grading purposes
+    max_candidates=max_candidates,
+    sagemaker_session=sess,
+    role=role,
+    max_runtime_per_training_job_in_seconds=1200,
+    total_job_runtime_in_seconds=7200
+)
+
+automl.fit(
+    ### BEGIN SOLUTION - DO NOT delete this comment for grading purposes
+    autopilot_train_s3_uri, # Replace None
+    ### END SOLUTION - DO NOT delete this comment for grading purposes
+    job_name=auto_ml_job_name, 
+    wait=False, 
+    logs=False
+)
+```
+
+Autopilot job status
+
+
+
 [Autogluon](<README (1).md>)
+
+
+
+{% embed url="https://www.amazon.science/publications/amazon-sagemaker-autopilot-a-white-box-automl-solution-at-scale" %}
+paper
+{% endembed %}
 
 ## Built-in algorithms
 
@@ -201,6 +269,36 @@ Various algorithms provide different methods to calculate feature importance. Fo
 | Summarize a research paper           | Text sumarization   | sequence-to-sequence |
 | Transcribe call center conversations | Speech-to-text      | Sequence-to-sequence |
 | Classify reviews into categories     | Text classification | Blazing Text         |
+
+### Evolution of text analysis algorithms&#x20;
+
+<figure><img src=".gitbook/assets/Screen Shot 2023-11-09 at 9.22.11 AM.png" alt=""><figcaption></figcaption></figure>
+
+### Additional reading material
+
+* [Word2Vec algorithm](https://arxiv.org/pdf/1301.3781.pdf)
+* [GloVe algorithm ](https://www.aclweb.org/anthology/D14-1162.pdf)
+* [FastText algorithm ](https://arxiv.org/pdf/1607.04606v2.pdf)
+* [Transformer architecture, "Attention Is All You Need"](https://arxiv.org/abs/1706.03762)
+* [BlazingText algorithm](https://dl.acm.org/doi/pdf/10.1145/3146347.3146354)
+* [ELMo algorithm ](https://arxiv.org/pdf/1802.05365v2.pdf)
+* [GPT model architecture ](https://cdn.openai.com/research-covers/language-unsupervised/language\_understanding\_paper.pdf)
+* [BERT model architecture](https://arxiv.org/abs/1810.04805)
+* [Built-in algorithms](https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html)
+* [Amazon SageMaker BlazingText](https://docs.aws.amazon.com/sagemaker/latest/dg/blazingtext.html)
+
+## Build, Train, and Deploy ML Pipelines using BERT
+
+
+
+### Feature Engineering and Feature Store
+
+#### Learning Objectives
+
+* Describe the concept of feature engineering
+* Apply feature engineering to prepare datasets for training
+* Understand the importance of a feature store
+* Demonstrate how to store and share features using Amazon SageMaker Feature Store
 
 
 
