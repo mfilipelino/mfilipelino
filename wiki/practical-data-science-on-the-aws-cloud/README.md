@@ -425,6 +425,39 @@ Feature engineering in machine learning is like **picking the right ingredients 
 
 #### Training of a custom model
 
+#### Debug and Profile models
+
+
+
+Detect common training errors
+
+* Vanishing gradients
+* Exploding gradients
+* Bad initialization
+* Overfitting
+*
+
+References:
+
+* [PyTorch Hub](https://pytorch.org/hub/)
+* [TensorFlow Hub](https://www.tensorflow.org/hub)
+* [Hugging Face open-source NLP transformers library ](https://github.com/huggingface/transformers)
+* [RoBERTa model ](https://arxiv.org/abs/1907.11692)
+* [Amazon SageMaker Model Training (Developer Guide) ](https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-training.html)
+* [Amazon SageMaker Debugger: A system for real-time insights into machine learning model training ](https://www.amazon.science/publications/amazon-sagemaker-debugger-a-system-for-real-time-insights-into-machine-learning-model-training)
+* [The science behind SageMaker’s cost-saving Debugger ](https://www.amazon.science/blog/the-science-behind-sagemakers-cost-saving-debugger)
+* [Amazon SageMaker Debugger (Developer Guide) ](https://docs.aws.amazon.com/sagemaker/latest/dg/train-debugger.html)
+* [Amazon SageMaker Debugger (GitHub)](https://github.com/awslabs/sagemaker-debugger)
+
+## Deploy End-to-end machine learning pipelines
+
+* Describe the concept of machine learning operations (MLOps) and pipelines
+* Compare pipeline orchestration and automation
+* Demonstrate how to orchestrate pipelines
+* Discuss how to automate pipelines
+* Describe the concept of model lineage and artifact tracking
+* Demonstrate how to track model lineage and artifacts
+
 
 
 
