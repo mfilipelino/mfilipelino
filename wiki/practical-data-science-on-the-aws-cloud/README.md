@@ -1,10 +1,16 @@
+---
+coverY: 0
+---
+
 # 📋 Practical Data Science on the AWS Cloud
 
-#### Lectures notes [https://community.deeplearning.ai/t/pds-course-1-lecture-notes/48242](https://community.deeplearning.ai/t/pds-course-1-lecture-notes/48242)
+Lectures notes [https://community.deeplearning.ai/t/pds-course-1-lecture-notes/48242](https://community.deeplearning.ai/t/pds-course-1-lecture-notes/48242)
 
-<figure><img src=".gitbook/assets/Screen Shot 2023-10-29 at 2.42.49 PM.png" alt=""><figcaption><p>Machine Learning Workflow</p></figcaption></figure>
+<figure><img src="https://files.oaiusercontent.com/file-yifqX94wTANjHDKjDuoEIFYE?se=2023-11-11T14%3A40%3A59Z&#x26;sp=r&#x26;sv=2021-08-06&#x26;sr=b&#x26;rscc=max-age%3D31536000%2C%20immutable&#x26;rscd=attachment%3B%20filename%3Df7b7bbb4-0242-434b-8f4a-49874e4e9826.png&#x26;sig=YnXthEbDq1ABmicYU99A7jh8uU88C2LTDrPHA5WhN88%3D" alt=""><figcaption></figcaption></figure>
 
-### Popular ML tasks and learning paradigmas
+<figure><img src="../.gitbook/assets/Screen Shot 2023-10-29 at 2.42.49 PM.png" alt=""><figcaption><p>Machine Learning Workflow</p></figcaption></figure>
+
+### Popular ML tasks and learning paradigms
 
 * **Supervised learning:** Classification & Regression&#x20;
 * **Unsupervised** Clustering
@@ -12,13 +18,13 @@
 * **Computer vision**
 * **Text Analysis**
 
-<figure><img src=".gitbook/assets/Screen Shot 2023-11-06 at 8.42.46 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screen Shot 2023-11-06 at 8.42.46 AM.png" alt=""><figcaption></figcaption></figure>
 
 **The task:**
 
 More specifically, you will perform multi-class classification for sentiment analysis of product reviews
 
-<figure><img src=".gitbook/assets/Screen Shot 2023-10-26 at 2.45.35 PM (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screen Shot 2023-10-26 at 2.45.35 PM (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Data Bias and Feature Importance
 
@@ -26,7 +32,7 @@ More specifically, you will perform multi-class classification for sentiment ana
 * Demonstrate how to detect data bias
 * Understand feature importance
 
-<figure><img src=".gitbook/assets/statisticalbias.png" alt="" width="188"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/statisticalbias.png" alt="" width="188"><figcaption></figcaption></figure>
 
 ### Statistical bias
 
@@ -148,7 +154,7 @@ SageMaker Autopilot job consists of the following high-level steps:
 * _Feature engineering_ where the data is scrubbed, balanced, combined, and split into train and validation.
 * _Model training and tuning_ where the top performing features, hyper-parameters, and models are selected and trained.
 
-<figure><img src=".gitbook/assets/autoML.png" alt=""><figcaption><p>AutoML</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/autoML.png" alt=""><figcaption><p>AutoML</p></figcaption></figure>
 
 1. Extract
 
@@ -202,7 +208,7 @@ Autopilot job status
 
 
 
-[Autogluon](<README (1).md>)
+[Autogluon](<../README (1).md>)
 
 
 
@@ -220,7 +226,7 @@ paper
 * Apply the Amazon SageMaker built-in BlazingText algorithm to train a text classifier
 * Deploy the text classifier and make predictions
 
-<figure><img src=".gitbook/assets/Screen Shot 2023-11-06 at 8.39.43 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screen Shot 2023-11-06 at 8.39.43 AM.png" alt=""><figcaption></figcaption></figure>
 
 ### Why use built-in algorithms?
 
@@ -228,13 +234,49 @@ paper
 * Focus more on domain-specific tasks rather than managing low-level model code and infrastructure
 * Trained model can be downloaded and re-used elsewhere
 
-<figure><img src=".gitbook/assets/Screen Shot 2023-11-06 at 8.40.36 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screen Shot 2023-11-06 at 8.40.36 AM.png" alt=""><figcaption></figcaption></figure>
 
 ### ML types tasks and built-in algorithms
 
-<figure><img src=".gitbook/assets/Screen Shot 2023-11-06 at 8.42.46 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screen Shot 2023-11-06 at 8.42.46 AM.png" alt=""><figcaption></figcaption></figure>
 
+#### Classification and Regression in Machine Learning
 
+**Classification Algorithms**
+
+1. **What is Classification?**
+   * **Purpose**: Classification algorithms are used when the output is a category, like "spam" or "not spam", "disease" or "no disease".
+   * **Type of Output**: Discrete, categorical.
+   * **Examples**: Decision Trees, Naive Bayes, Support Vector Machines (SVM), Logistic Regression, Neural Networks.
+2. **How It Works**:
+   * **Input**: Data with known categories.
+   * **Process**: The algorithm learns by mapping input data (features) to the known categories (labels).
+   * **Prediction**: Classifies new, unseen data into these categories.
+3. **Use Cases**:
+   * Email spam filters (spam or not).
+   * Medical diagnosis (diseased or healthy).
+   * Image recognition (identifying objects in images).
+
+**Regression Algorithms**
+
+1. **What is Regression?**
+   * **Purpose**: Regression algorithms predict a continuous quantity. For example, predicting temperatures, prices, or ages.
+   * **Type of Output**: Continuous, numeric.
+   * **Examples**: Linear Regression, Polynomial Regression, Lasso Regression, Ridge Regression.
+2. **How It Works**:
+   * **Input**: Data with known continuous output values.
+   * **Process**: The algorithm models the relationship between input features and a continuous output variable.
+   * **Prediction**: Predicts a continuous value for new, unseen data.
+3. **Use Cases**:
+   * Predicting real estate prices.
+   * Forecasting weather conditions.
+   * Estimating life expectancies.
+
+**Key Differences**
+
+* **Output Type**: Classification predicts discrete categories, while regression predicts continuous values.
+* **Evaluation Metrics**: Classification uses accuracy, precision, recall, etc., whereas regression uses Mean Squared Error (MSE), R-squared, etc.
+* **Nature of Prediction**: Classification provides a label (like 'cat' or 'dog'), while regression provides a quantifiable prediction (like '24.5 degrees Celsius').
 
 ### Classification and Regression - Tabular data
 
@@ -272,7 +314,7 @@ paper
 
 ### Evolution of text analysis algorithms&#x20;
 
-<figure><img src=".gitbook/assets/Screen Shot 2023-11-09 at 9.22.11 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screen Shot 2023-11-09 at 9.22.11 AM.png" alt=""><figcaption></figcaption></figure>
 
 ### Additional reading material
 
@@ -289,16 +331,107 @@ paper
 
 ## Build, Train, and Deploy ML Pipelines using BERT
 
+<figure><img src="../.gitbook/assets/Screen Shot 2023-11-12 at 10.10.10 AM.png" alt=""><figcaption></figcaption></figure>
 
+### Feature Engineering
 
-### Feature Engineering and Feature Store
+<figure><img src="../.gitbook/assets/Screen Shot 2023-11-12 at 10.11.36 AM.png" alt=""><figcaption></figcaption></figure>
 
-#### Learning Objectives
+#### Learning objective
 
 * Describe the concept of feature engineering
 * Apply feature engineering to prepare datasets for training
-* Understand the importance of a feature store
-* Demonstrate how to store and share features using Amazon SageMaker Feature Store
+
+Feature engineering in machine learning is like **picking the right ingredients for a recipe**. Imagine you're making a dish and you want it to taste amazing. You carefully choose which ingredients to use, how to prepare them, and in what quantities. In machine learning, the "dish" is the model you're building, and the "ingredients" are the features (data) you put into it.
+
+<figure><img src="https://files.oaiusercontent.com/file-LoM3VNjoTq1bTJSklCgMrAWl?se=2023-11-12T16%3A08%3A39Z&#x26;sp=r&#x26;sv=2021-08-06&#x26;sr=b&#x26;rscc=max-age%3D31536000%2C%20immutable&#x26;rscd=attachment%3B%20filename%3D8b1f690b-1274-4767-b3ad-361d175a8169.webp&#x26;sig=bkw1IKTDYukJgRWi1sTaarHVcMlQdqA2xJaUXFoNEjY%3D" alt="" width="375"><figcaption></figcaption></figure>
+
+#### Feature engineering steps
+
+1. **Selecting the Right Features**: This is like choosing ingredients that will make your dish flavorful. In machine learning, you pick the most relevant and useful data (features) that can help your model learn and make accurate predictions.
+   1. Reduce feature dimensionality
+   2. Train models faster
+   3. Feature importance report
+2. **Removing Unnecessary Features**: Just like you wouldn't add every spice in your rack to a dish, in machine learning, you remove data that doesn't help or might confuse your model.
+3. **Transforming Features**: Sometimes, the raw ingredients you have aren't ready to be used directly in cooking. You might need to chop, grind, or season them. Similarly, in feature engineering, you often need to change or process your data so that it's in the best form for your model. This can include scaling (changing the range), normalizing (making the data fit a standard format), or encoding categorical data into a numerical format.
+   1. Transform no numerical features to numerical features
+4. **Creating New Features**: Imagine you're cooking and you decide to mix two ingredients to create a new flavour. In machine learning, you can combine or manipulate existing data features to create new ones that might give your model more insight.
+   1. Lead to more accurate predictions
+
+#### Feature engineering Pipeline
+
+<figure><img src="../.gitbook/assets/Screen Shot 2023-11-12 at 10.15.16 AM.png" alt=""><figcaption></figcaption></figure>
+
+#### Split dataset&#x20;
+
+
+
+<figure><img src="../.gitbook/assets/Screen Shot 2023-11-13 at 9.53.49 AM.png" alt=""><figcaption></figcaption></figure>
+
+## Feature store
+
+
+
+<figure><img src="../.gitbook/assets/Screen Shot 2023-11-12 at 10.16.24 AM.png" alt=""><figcaption></figcaption></figure>
+
+* Centralized
+* Reusable
+* Discoverable
+
+### AWS Sagemaker feature store
+
+* Store and server features
+* Reduce skew
+* Real-time & batch
+
+
+
+#### BERT vs BlazingText
+
+**BERT** uses a bidirectional transformer architecture and therefore generates contextual embeddings. If the same word is used in different ways, BERT will capture different meanings and therefore produce 2 different vectors to represent the different meanings.
+
+**BlazingText**, in contrast to BERT, does not inherently produce different embeddings for the same word based on its context. BlazingText is based on the Word2Vec architecture, specifically on its Skip-Gram and Continuous Bag-of-Words (CBOW) models, which generate static word embeddings.
+
+\
+
+
+
+
+| Feature                   | BERT                                                                                                          | BlazingText                                                                                           |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **Architecture**          | Based on the Transformer model.                                                                               | Based on the Word2Vec model, specifically Skip-Gram and CBOW architectures.                           |
+| **Contextual Embeddings** | Generates context-sensitive, dynamic embeddings.                                                              | Produces static word embeddings; the same word has the same representation regardless of context.     |
+| **Representation**        | Contextual word and sentence embeddings.                                                                      | Primarily word-level embeddings.                                                                      |
+| **Embedding Nature**      | Different embeddings for the same word in different contexts.                                                 | Fixed embedding for each word, independent of context.                                                |
+| **Complexity**            | More complex, with a larger number of parameters.                                                             | Simpler and more efficient, especially in terms of computational resources.                           |
+| **Use Cases**             | Suitable for tasks requiring deep contextual understanding, like sentence classification, question answering. | Efficient for tasks where high-speed word embeddings are needed, such as large-scale text processing. |
+| **Scalability**           | Resource-intensive, suitable for more complex NLP tasks.                                                      | Designed for high performance and scalability, particularly on AWS.                                   |
+| **Flexibility**           | Highly flexible for a wide range of NLP tasks.                                                                | Efficient for generating word embeddings but less flexible for context-dependent tasks.               |
+
+#### [https://huggingface.co/blog/bert-101#1-what-is-bert-used-for](https://huggingface.co/blog/bert-101#1-what-is-bert-used-for)
+
+#### references:&#x20;
+
+* [A few useful things to know about Machine Learning](https://homes.cs.washington.edu/\~pedrod/papers/cacm12.pdf)
+* [How to avoid machine learning pitfalls a guide for academic researchers](https://arxiv.org/pdf/2108.02497.pdf)
+* [Tidy Data](https://www.jstatsoft.org/article/view/v059i10)
+* [Fundamental Techniques of Feature Engineering for Machine Learning](https://towardsdatascience.com/feature-engineering-for-machine-learning-3a5e293a5114)
+
+
+
+### Train, Debug and Profile a Machine Learning Model
+
+
+
+#### Training of a custom model
+
+
+
+
+
+
+
+
 
 
 
