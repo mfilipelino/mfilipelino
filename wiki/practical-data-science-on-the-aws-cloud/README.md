@@ -423,9 +423,95 @@ Feature engineering in machine learning is like **picking the right ingredients 
 
 
 
-#### Training of a custom model
+### Build-in algorithms versus pre-trained models
+
+<figure><img src="../.gitbook/assets/Screen Shot 2023-11-14 at 12.02.58 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Build-in algorithms versus pre-trained models
+
+#### Built-in Algorithms
+
+1. **Definition**: Built-in algorithms are ready-to-use algorithms provided by machine learning platforms like Amazon SageMaker. These algorithms are designed to be applied directly to your data without the need for designing and coding the algorithm from scratch.
+2. **Customization**: They offer limited customization compared to designing your own model. You can tweak certain parameters, but the core algorithmic structure remains the same.
+3. **Use Cases**: Ideal for standard machine learning tasks where common algorithms are proven to be effective, such as regression, classification, clustering, etc.
+4. **Advantages**:
+   * **Ease of Use**: They are easy to deploy and use, especially for those not looking to delve deeply into algorithmic complexities.
+   * **Optimized Performance**: Often optimized for performance and scalability within the platform they are provided on.
+5. **Limitations**:
+   * **Less Flexibility**: Less flexibility in algorithm modification.
+   * **Generalization**: May not be well-suited for highly specific or novel tasks that require unique model architectures.
+
+#### Pre-trained Models
+
+1. **Definition**: Pre-trained models are models that have already been trained on a large dataset, usually on a general task like image recognition, language processing, etc. They are used as a starting point for further training on a specific task (a process known as transfer learning).
+2. **Customization**: They offer more flexibility. You can fine-tune these models on your specific dataset, adapting them to your particular needs.
+3. **Use Cases**: Ideal for tasks where collecting a large and diverse training dataset is difficult or for complex tasks like natural language processing, object detection, etc.
+4. **Advantages**:
+   * **Time and Resource Efficient**: Saves time and resources as the initial, extensive training has already been done.
+   * **High Performance**: Often provide high-quality results, especially in complex domains like computer vision and NLP.
+5. **Limitations**:
+   * **Requirement of Domain Knowledge**: Requires understanding of how to fine-tune and adapt them to your specific task.
+   * **Computational Resources**: Depending on the model size and complexity, fine-tuning can still require significant computational resources.
+
+#### Conclusion
+
+* **Built-in Algorithms**: Best for straightforward applications, ease of use, and when you need a quick deployment.
+* **Pre-trained Models**: Best for complex tasks, achieving high accuracy, and when dealing with tasks where data collection is challenging.
+
+### Model pre-trained and fine tunning
+
+<figure><img src="../.gitbook/assets/Screen Shot 2023-11-14 at 12.06.49 PM.png" alt=""><figcaption></figcaption></figure>
+
+###
+
+### Training of a custom model
+
+* **Training NLP Models**: Training models like BERT from scratch is time-consuming and resource-intensive, often requiring days and powerful CPUs or GPUs.
+* **Pretrained Models**: There's a wealth of pre-trained models available for adaptation to specific datasets and use cases.
+* **Difference Between Built-in Algorithms and Pretrained Models**:
+  * Built-in algorithms (like Blazing Text) come with complete training code; you just supply data.
+  * Pretrained models have been already trained on large text datasets and require custom training code for specific tasks.
+* **Concept of Pretraining and Fine-Tuning**:
+  * Pretraining involves learning vocabulary and vector representations from a large corpus in an unsupervised manner.
+  * Fine-tuning adapts these models to specific data sets and tasks, akin to transfer learning in NLP.
+* **Examples of pretrained Models**:
+  * Language-specific models like GermanBERT, CamemBERT, BERTje.
+  * Domain-specific models like PatentBERT, SciBERT, ClinicalBERT.
+* **Fine Tuning**: Faster than pretraining, involves fitting the model to a specific task with labeled data.
+* **Sources for Pretrained Models**:
+  * Model hubs in frameworks like PyTorch, TensorFlow, and Apache mxnet.
+  * Hugging Face’s model hub with over 8,000 NLP models.
+  * AWS SageMaker JumpStart for deploying models directly.
+* **SageMaker JumpStart**: Offers easy access to pre-trained models, one-click deployment, and solutions for common ML use cases.
+* **Project Focus**: Utilizing a pre trained RoBERTa model from Hugging Face for text classification, specifically for sentiment analysis of product reviews.
+
+<figure><img src="../.gitbook/assets/Screen Shot 2023-11-14 at 12.08.34 PM.png" alt=""><figcaption></figcaption></figure>
+
+1. **BERT Pre-Training**:
+   * **Masked Language Model (MLM)**: BERT masks 15% of the words in a sentence, then predicts these masked words, updating its model weights based on the accuracy of its predictions.
+   * **Next Sentence Prediction (NSP)**: BERT learns to predict whether two sentences logically follow each other. It does this by replacing one sentence in a pair with a random sentence 50% of the time and then predicting if they form a coherent pair.
+2. **Unsupervised Learning Approach**: Both MLM and NSP are performed as unsupervised learning using large collections of unlabeled text, such as Wikipedia and the Google Books corpus.
+3. **Transferability of BERT**: The pre-trained BERT model, with its learned vocabulary and representations, can be effectively used for various NLP and NLU tasks without needing training from scratch.
+4. **Fine-Tuning BERT**:
+   * Implemented as supervised learning, fine-tuning adapts BERT to specific tasks like text classification or question answering.
+   * This process is quicker and doesn't involve MLM or NSP, needing relatively few data samples.
+5. **Application to RoBERTa**:
+   * The RoBERTa model, an enhancement of BERT, omits the NSP and focuses more on MLM.
+   * It's trained with larger mini-batches, learning rates, and a significantly larger dataset (160 GB vs. BERT's 16 GB).
+   * These changes aim to improve RoBERTa's performance in NLP tasks, like text classification.
+6. **Week's Project**: You'll be using a pre-trained RoBERTa model from Hugging Face and fine-tuning it for sentiment analysis of product reviews, classifying them into three sentiment categories.
 
 #### Debug and Profile models
+
+A machine learning (ML) training job can have problems such as overfitting, saturated activation functions, and vanishing gradients, which can compromise model performance.
+
+1. **Overfitting**: This occurs when your model learns the training data too well, including its noise and outliers. As a result, it performs exceptionally on the training data but poorly on unseen data (test data). Essentially, the model becomes too complex, capturing spurious correlations that aren't actually relevant to the underlying pattern. This lack of generalization makes the model less effective in real-world applications.
+2. **Saturated Activation Functions**: Activation functions in neural networks help decide whether a neuron should be activated or not, based on the input it receives. Saturated activation functions are those where the function's output doesn't change significantly for a large range of input values. The classic example is the sigmoid function, where inputs with large absolute values are mapped to 1 or 0, with very little gradient. This can lead to two issues:
+   * **Slow Learning**: Because the gradient is very small, it results in slow updates to the weights during backpropagation.
+   * **Dead Neurons**: In the case of functions like ReLU (Rectified Linear Unit), if the input to a neuron is always negative, the neuron never activates (always outputs zero), essentially becoming useless.
+3. **Vanishing Gradients**: This problem occurs during training deep neural networks, where gradients of the loss function become smaller and smaller as they are propagated back through the layers during backpropagation. As a result, neurons in the earlier layers learn very slowly, if at all, because the gradient updates to their weights are tiny. This issue is particularly pronounced with certain activation functions like sigmoid or tanh, where gradients can be small, and their repeated multiplication (as in deep networks) leads to exponentially smaller gradients. Without meaningful updates to the weights, the network fails to learn effectively.
+
+Each of these issues can significantly hinder a model's ability to learn effectively and generalize to new data, making it crucial to apply appropriate strategies and techniques to mitigate them during the training process.
 
 
 
@@ -435,7 +521,43 @@ Detect common training errors
 * Exploding gradients
 * Bad initialization
 * Overfitting
-*
+
+Questions like:
+
+* Are my gradient values becoming too large or too small?
+* How much GPU, CPU, network and memory does my model training consume?
+
+Take actions:
+
+* Stop the model training if the model starts overfitting!
+* Send notifications
+
+Metrics:
+
+* System metrics
+  * CPU and GPU ( and memory) utilization
+  * Network metrics
+  * Data input and output (I/O) metrics
+* Framework metrics
+  * Convolutional operations in forward pass&#x20;
+  * Batch normalization operations in the backward pass&#x20;
+  * Data loader processes between steps&#x20;
+  * Gradient descent algorithm operations
+* Output tensor
+  * scalar values (accuracy and loss)
+  * Matrices (weights, gradients, input layers, and output layers)
+
+
+
+
+
+
+
+#### Monitor and profile system resource utilization
+
+<figure><img src="../.gitbook/assets/Screen Shot 2023-11-14 at 12.11.27 PM.png" alt=""><figcaption></figcaption></figure>
+
+
 
 References:
 
