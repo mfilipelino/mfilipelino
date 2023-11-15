@@ -580,7 +580,9 @@ References:
 * Describe the concept of model lineage and artifact tracking
 * Demonstrate how to track model lineage and artifacts
 
+[Data centric](https://www.youtube.com/watch?v=06-AZXmwHjo\&t=48s)
 
+{% embed url="https://www.youtube.com/watch?v=ayzOzZGHZy4&list=PLnSYPjg2dHQKdig0vVbN-ZnEU0yNJ1mo5" %}
 
 
 
