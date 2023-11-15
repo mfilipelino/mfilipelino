@@ -580,6 +580,20 @@ References:
 * Describe the concept of model lineage and artifact tracking
 * Demonstrate how to track model lineage and artifacts
 
+
+
+**Sagemake Terminology**
+
+This notebook focuses on the following features of Amazon SageMaker Pipelines:
+
+* **Pipelines** - a directed acyclic graph (DAG) of steps and conditions to orchestrate SageMaker jobs and resource creation
+* **Processing job steps** - a simplified, managed experience on SageMaker to run data processing workloads, such as feature engineering, data validation, model evaluation, and model explainability
+* **Training job steps** - an iterative process that teaches a model to make predictions on new data by presenting examples from a training dataset
+* **Conditional step execution** - provides conditional execution of branches in a pipeline
+* **Registering models** - register a model in a model registry to create a deployable models in Amazon SageMaker
+* **Parameterized pipeline executions** - allows pipeline executions to vary by supplied parameters
+* **Model endpoint** - hosts the model as a REST endpoint to serve predictions from new data
+
 [Data centric](https://www.youtube.com/watch?v=06-AZXmwHjo\&t=48s)
 
 {% embed url="https://www.youtube.com/watch?v=ayzOzZGHZy4&list=PLnSYPjg2dHQKdig0vVbN-ZnEU0yNJ1mo5" %}
