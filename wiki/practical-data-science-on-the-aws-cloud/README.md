@@ -598,11 +598,27 @@ This notebook focuses on the following features of Amazon SageMaker Pipelines:
 
 {% embed url="https://www.youtube.com/watch?v=ayzOzZGHZy4&list=PLnSYPjg2dHQKdig0vVbN-ZnEU0yNJ1mo5" %}
 
+### Optimize ML Models and Deploy Human-in-the-Loop Pipelines
 
+#### Learning Objectives
 
+***
 
+* Describe practical challenges related to data for machine learning - scale, resources (storage, compute, memory)
+* Explain approaches to address challenges with data for machine learning
+* Describe practical challenges related to ML training such as large data sets, optimizing training time & costs
+* Explain approaches to address ML training challenges using techniques such as streaming data, profiling training infrastructure monitoring, data parallelism etc.
+* Describe the concept of hyper-parameter tuning
+* Explain popular algorithms used for automatic model tuning
+* Apply hyper-parameter tuning to a BERT-based text classifier and dataset
+* Describe the concept of model evaluation
+* Demonstrate how to evaluate a model
 
+### Advanced Model training
 
+#### Model tuning
+
+<figure><img src="../.gitbook/assets/Screen Shot 2023-11-16 at 9.36.54 AM.png" alt=""><figcaption></figcaption></figure>
 
 
 
