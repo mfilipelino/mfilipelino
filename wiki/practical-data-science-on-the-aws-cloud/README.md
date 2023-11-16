@@ -620,5 +620,186 @@ This notebook focuses on the following features of Amazon SageMaker Pipelines:
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-11-16 at 9.36.54 AM.png" alt=""><figcaption></figcaption></figure>
 
+#### Manual Model Tuning
+
+1. **What It Is**: Manual model tuning involves manually adjusting the hyperparameters of a machine learning model. Hyperparameters are the configuration settings used to structure the learning process. They are not learned from the data but are set prior to the training process.
+2. **Process**:
+   * **Trial and Error**: You adjust hyperparameters based on experience, intuition, or experimentation.
+   * **Expertise Required**: Requires substantial knowledge of how different hyperparameters affect learning and model performance.
+   * **Examples**: Adjusting learning rate, the number of layers in a neural network, batch size, etc.
+3. **Advantages**:
+   * **Control**: You have full control over the model configuration.
+   * **Insight**: It can provide deeper understanding and insights into how the model works.
+4. **Disadvantages**:
+   * **Time-Consuming**: It can be very time-consuming, especially for complex models.
+   * **Expertise-Dependent**: Requires significant expertise in machine learning and the specific model being used.
+   * **Risk of Overfitting**: Manual tuning might lead to overfitting if not done carefully.
+
+#### Automatic Model Tuning (Hyperparameter Optimization)
+
+1. **What It Is**: Automatic model tuning, also known as hyperparameter optimization, uses algorithms to automatically search for the optimal set of hyperparameters for a given model.
+2. **Techniques**:
+   * **Grid Search**: Systematically searches through a specified subset of hyperparameters.
+   * **Random Search**: Randomly selects hyperparameters from a defined range.
+   * **Bayesian Optimization**: Uses a probabilistic model to guide the search for the best hyperparameters.
+   * **Hyberband**
+3. **Advantages**:
+   * **Efficiency**: Can be more efficient, especially for large hyperparameter spaces.
+   * **Less Expertise Required**: Reduces the level of expertise required to tune the model effectively.
+   * **Systematic**: Often more systematic and comprehensive than manual methods.
+4. **Disadvantages**:
+   * **Computational Cost**: Some methods (like grid search) can be computationally expensive.
+   * **Lack of Intuition**: May not provide as much insight into how each hyperparameter affects the model's performance.
+   * **Overfitting Risk**: There's still a risk of overfitting, especially if the search space is not well-defined.
+
+#### Choosing Between Manual and Automatic Tuning
+
+* **Complexity of the Model**: For more complex models, automatic tuning might be more feasible.
+* **Available Resources**: Consider computational resources and time.
+* **Expertise**: If you have significant expertise, manual tuning might yield better-tuned models.
+* **Project Stage**: Early experimentation might benefit from manual tuning for insights, while later stages might leverage automatic tuning for efficiency.
+
+### Types of automatic model tunning
+
+#### Grid Search
+
+* **Definition**: A method that systematically works through multiple combinations of parameter tunes, cross-validating as it goes to determine which tune gives the best performance.
+* **Process**:
+  * Define a grid of hyperparameter values.
+  * Train a model for every combination of hyperparameters in the grid.
+  * Evaluate each model using cross-validation.
+  * Select the model with the best performance.
+* **Advantages**:
+  * Simplicity: Easy to understand and implement.
+  * Exhaustive: Tests every possible combination, ensuring the best set is found within the grid.
+* **Disadvantages**:
+  * Computationally Expensive: Can be very slow, especially with large grids.
+  * Limited by Grid Resolution: May miss the optimal set if it's not included in the predefined grid.
+
+#### Random Search
+
+* **Definition**: Randomly samples the search space and evaluates sets from a specified probability distribution.
+* **Process**:
+  * Define a search space as a bounded domain of hyperparameter values.
+  * Select random combinations of hyperparameters.
+  * Train and evaluate a model for each combination.
+  * Repeat the process for a specified number of iterations or time limit.
+* **Advantages**:
+  * Faster than Grid Search: Can find a good set of hyperparameters much quicker.
+  * Scalability: More efficient for high-dimensional spaces.
+* **Disadvantages**:
+  * Randomness: Might miss optimal parameters.
+  * No Guarantee of Best Solution: Less systematic than Grid Search.
+
+#### Bayesian Optimization
+
+* **Definition**: Uses a probabilistic model to guide the search for the best hyperparameters, balancing exploration and exploitation.
+* **Process**:
+  * Build a probabilistic model of the objective function.
+  * Use the model to select promising hyperparameters to evaluate in the true objective function.
+  * Update the model based on the results and repeat.
+* **Advantages**:
+  * Efficiency: Tends to find better parameters with fewer iterations.
+  * Balance: Good at balancing exploring new parameters and exploiting known good ones.
+* **Disadvantages**:
+  * Complexity: More complex to understand and implement than Grid or Random Search.
+  * Computation Overhead: Building and updating the probabilistic model can be computationally intensive.
+
+#### Hyperband
+
+* **Definition**: An extension of Random Search which uses a novel bandit-based approach to hyperparameter optimization.
+* **Process**:
+  * Allocate a budget (like iterations, epochs) and randomly sample configurations.
+  * Initially, allocate small resources to each configuration.
+  * Iteratively prune the worst-performing configurations, increasing resources for the promising ones.
+* **Advantages**:
+  * Resource-Efficient: Quickly identifies promising hyperparameters without fully training every model.
+  * Dynamic Allocation: Adjusts the allocation of resources in a data-driven way.
+* **Disadvantages**:
+  * Partial Training: Some models might be discarded too early, potentially missing good configurations.
+  * Complexity: More complex and nuanced than basic methods like Grid or Random Search.
+
+### Tune BERT Text classifier
+
+
+
+<figure><img src="../.gitbook/assets/Screen Shot 2023-11-16 at 10.00.40 AM.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/Screen Shot 2023-11-16 at 10.02.25 AM.png" alt=""><figcaption></figcaption></figure>
+
+#### Warm types:
+
+* IDENTICAL\_DATA\_AND\_ALGORITHM
+  * Same input data and training data
+  * Update hyperparameter tunning&#x20;
+* TRANSFER\_LEARNING
+  * Update training data and different versions of training algorithm
+
+
+
+### Best Practices - Sagemaker HyperParameter Tuning
+
+* Select a small number of hyperparameters
+* Select a small range for hyperparameters
+* Enable warm start
+* Enable early stop to save tuning time and costs
+* Select a small number of concurrent training jobs
+
+### Best practices - Monitoring Training Resources
+
+* Right size computer resources
+* Requires empirical testing
+* Amazon CloudWatch Metrics
+* Insights from Amazon SageMaker Debugger
+
+
+
+### Machine Learning - Checkpointing
+
+* Save state of ML models during training
+* Checkpoints: Snapshot of the model
+  * Model architecture
+  * Model weights
+  * Training configurations
+  * Optimizer&#x20;
+* Frequency and number of checkpoints
+
+
+
+### Distributed Training Strategies
+
+* Increased training data volume
+* Increased model size and complexity
+
+<figure><img src="../.gitbook/assets/Screen Shot 2023-11-16 at 10.17.14 AM.png" alt=""><figcaption></figcaption></figure>
+
+#### Data Parallelism
+
+* Training data split up
+* The model replicated on all nodes
+
+#### Model Parallelism
+
+* Training data replicated
+* Model split up on all nodes
+
+<figure><img src="../.gitbook/assets/Screen Shot 2023-11-16 at 5.19.45 PM.png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
