@@ -1,14 +1,13 @@
----
-coverY: 0
----
-
 # 📋 Practical Data Science on the AWS Cloud
+
+
+Deep learning notes from the course [https://www.coursera.org/learn/aws-practical-data-science](https://www.coursera.org/learn/aws-practical-data-science)
 
 Lectures notes [https://community.deeplearning.ai/t/pds-course-1-lecture-notes/48242](https://community.deeplearning.ai/t/pds-course-1-lecture-notes/48242)
 
 <figure><img src="https://files.oaiusercontent.com/file-yifqX94wTANjHDKjDuoEIFYE?se=2023-11-11T14%3A40%3A59Z&#x26;sp=r&#x26;sv=2021-08-06&#x26;sr=b&#x26;rscc=max-age%3D31536000%2C%20immutable&#x26;rscd=attachment%3B%20filename%3Df7b7bbb4-0242-434b-8f4a-49874e4e9826.png&#x26;sig=YnXthEbDq1ABmicYU99A7jh8uU88C2LTDrPHA5WhN88%3D" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/Screen Shot 2023-10-29 at 2.42.49 PM.png" alt=""><figcaption><p>Machine Learning Workflow</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/machine-learning-workflow.png" alt=""><figcaption><p>Machine Learning Workflow</p></figcaption></figure>
 
 ### Popular ML tasks and learning paradigms
 
