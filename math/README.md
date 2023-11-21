@@ -1,10 +1,21 @@
 ---
 description: https://brilliant.org/courses/vectors/
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # Vectors
 
-### Meet vectors
+## Meet vectors
 
 
 
@@ -33,6 +44,69 @@ When a vector \<a,b> shifts an object starting from the origin, the object end u
 
 
 _**We can think of a vector as a shift in space.**_
+
+
+
+## Adding vectors
+
+Let's see how to express a sequence of moves, and then how to reverse a move
+
+
+
+A sequence of shifts is equivalent to a shift by **one** vector.
+
+That vector goes from the tail of the first vector to the head of the last vector.
+
+
+
+A **component** is a part of a vector. The components tell how much a shift the vector produces in the horizontal and vertical directions.
+
+For example, the vector ⟨3,4⟩ has a horizontal component of 3, and a vertical component of 4.
+
+
+
+To find the effect of shifting by multiple vectors in order, we can **add the vectors.**
+
+That means adding up the vectors' components
+
+\<a,b> + \<c,d> = \<a + c, b + d>
+
+* By adding vectors, we can find one vector that's equivalent to a sequence of shifts.
+* By changing the sign of a vector's components, we can reverse the vector's direction.
+
+## From One to Another
+
+
+
+## Length of a vector
+
+
+
+## Scaling vectors
+
+
+
+## Between two Vectors
+
+
+
+## Moving Along a Line
+
+
+
+## Transformations with Vectors
+
+
+
+## Translations
+
+
+
+## Dilations&#x20;
+
+
+
+## Reflections&#x20;
 
 
 
