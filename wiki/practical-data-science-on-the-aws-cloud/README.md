@@ -1,74 +1,29 @@
 # 📋 Practical Data Science on the AWS Cloud
 
+## 📋 Practical Data Science on the AWS Cloud
+
 Here's a table of contents with links to all the topics in your markdown:
 
-- [📋 Practical Data Science on the AWS Cloud](#-practical-data-science-on-the-aws-cloud)
-    - [Popular ML tasks and learning paradigms](#popular-ml-tasks-and-learning-paradigms)
-- [Data Bias and Feature Importance](#data-bias-and-feature-importance)
-  - [Statistical bias](#statistical-bias)
-    - [Statistical bias causes](#statistical-bias-causes)
-    - [What are facets?](#what-are-facets)
-    - [Measuring Statistical Bias](#measuring-statistical-bias)
-    - [Approaches to Statistical Bias Detection](#approaches-to-statistical-bias-detection)
-  - [What is feature importance?](#what-is-feature-importance)
-  - [Automated Machine Learning - AutoML](#automated-machine-learning---automl)
-  - [Built-in algorithms](#built-in-algorithms)
-    - [Why use built-in algorithms?](#why-use-built-in-algorithms)
-    - [ML types tasks and built-in algorithms](#ml-types-tasks-and-built-in-algorithms)
-      - [Classification and Regression in Machine Learning](#classification-and-regression-in-machine-learning)
-    - [Classification and Regression - Tabular data](#classification-and-regression---tabular-data)
-    - [Clustering](#clustering)
-    - [Image processing](#image-processing)
-    - [Text analysis](#text-analysis)
-    - [Evolution of text analysis algorithms](#evolution-of-text-analysis-algorithms)
-    - [Additional reading material](#additional-reading-material)
-  - [Build, Train, and Deploy ML Pipelines using BERT](#build-train-and-deploy-ml-pipelines-using-bert)
-    - [Feature Engineering](#feature-engineering)
-      - [Learning objective](#learning-objective)
-      - [Feature engineering steps](#feature-engineering-steps)
-      - [Feature engineering Pipeline](#feature-engineering-pipeline)
-      - [Split dataset](#split-dataset)
-  - [Feature store](#feature-store)
-    - [AWS Sagemaker feature store](#aws-sagemaker-feature-store)
-      - [BERT vs BlazingText](#bert-vs-blazingtext)
-      - [https://huggingface.co/blog/bert-101#1-what-is-bert-used-for](#httpshuggingfacecoblogbert-1011-what-is-bert-used-for)
-      - [references:](#references)
-    - [Train, Debug and Profile a Machine Learning Model](#train-debug-and-profile-a-machine-learning-model)
-    - [Build-in algorithms versus pre-trained models](#build-in-algorithms-versus-pre-trained-models)
-    - [Build-in algorithms versus pre-trained models](#build-in-algorithms-versus-pre-trained-models-1)
-      - [Built-in Algorithms](#built-in-algorithms-1)
-      - [Pre-trained Models](#pre-trained-models)
-      - [Conclusion](#conclusion)
-    - [Model pre-trained and fine tunning](#model-pre-trained-and-fine-tunning)
-    - [](#)
-    - [Training of a custom model](#training-of-a-custom-model)
-      - [Debug and Profile models](#debug-and-profile-models)
-      - [Monitor and profile system resource utilization](#monitor-and-profile-system-resource-utilization)
-  - [Deploy End-to-end machine learning pipelines](#deploy-end-to-end-machine-learning-pipelines)
-    - [Optimize ML Models and Deploy Human-in-the-Loop Pipelines](#optimize-ml-models-and-deploy-human-in-the-loop-pipelines)
-      - [Learning Objectives](#learning-objectives)
-    - [Advanced Model training](#advanced-model-training)
-      - [Model tuning](#model-tuning)
-      - [Manual Model Tuning](#manual-model-tuning)
-      - [Automatic Model Tuning (Hyperparameter Optimization)](#automatic-model-tuning-hyperparameter-optimization)
-      - [Choosing Between Manual and Automatic Tuning](#choosing-between-manual-and-automatic-tuning)
-    - [Types of automatic model tunning](#types-of-automatic-model-tunning)
-      - [Grid Search](#grid-search)
-      - [Random Search](#random-search)
-      - [Bayesian Optimization](#bayesian-optimization)
-      - [Hyperband](#hyperband)
-    - [Tune BERT Text classifier](#tune-bert-text-classifier)
-      - [Warm types:](#warm-types)
-    - [Best Practices - Sagemaker HyperParameter Tuning](#best-practices---sagemaker-hyperparameter-tuning)
-    - [Best practices - Monitoring Training Resources](#best-practices---monitoring-training-resources)
-    - [Machine Learning - Checkpointing](#machine-learning---checkpointing)
-    - [Distributed Training Strategies](#distributed-training-strategies)
-      - [Data Parallelism](#data-parallelism)
-      - [Model Parallelism](#model-parallelism)
-      - [Advanced model deployment and monitoring](#advanced-model-deployment-and-monitoring)
-      - [Data Labeling:](#data-labeling)
-      - [Human in the Loop Pipelines](#human-in-the-loop-pipelines)
-      - [Amazon A2I](#amazon-a2i)
+* [📋 Practical Data Science on the AWS Cloud](./#-practical-data-science-on-the-aws-cloud)
+  * [Popular ML tasks and learning paradigms](./#popular-ml-tasks-and-learning-paradigms)
+* [Data Bias and Feature Importance](./#data-bias-and-feature-importance)
+  * [Statistical bias](./#statistical-bias)
+    * [Statistical bias causes](./#statistical-bias-causes)
+    * [What are facets?](./#what-are-facets)
+    * [Measuring Statistical Bias](./#measuring-statistical-bias)
+    * [Approaches to Statistical Bias Detection](./#approaches-to-statistical-bias-detection)
+  * [What is feature importance?](./#what-is-feature-importance)
+  * [Automated Machine Learning - AutoML](./#automated-machine-learning---automl)
+  * [Built-in algorithms](./#built-in-algorithms)
+  * [Why use built-in algorithms?](./#why-use-built-in-algorithms)
+  * [ML types tasks and built-in algorithms](./#ml-types-tasks-and-built-in-algorithms)
+    * [Classification and Regression in Machine Learning](./#classification-and-regression-in-machine-learning)
+  * [Classification and Regression - Tabular data](./#classification-and-regression---tabular-data)
+  * [Clustering](./#clustering)
+  * [Image processing](./#image-processing)
+  * [Text analysis](./#text-analysis)
+  * [Evolution of text analysis algorithms](./#evolution-of-text-analysis-algorithms)
+  * [Additional reading material](./#additional-reading-material)
 
 Each section and subsection title is a hyperlink that will take you directly to the corresponding part of the document. This structure allows for easy navigation and quick access to specific topics within the markdown.
 
@@ -78,7 +33,7 @@ Lectures notes [https://community.deeplearning.ai/t/pds-course-1-lecture-notes/4
 
 <figure><img src="../.gitbook/assets/machine-learning-workflow.png" alt=""><figcaption><p>Machine Learning Workflow</p></figcaption></figure>
 
-### Popular ML tasks and learning paradigms
+#### Popular ML tasks and learning paradigms
 
 * **Supervised learning**: Classification & Regression
 * **Unsupervised** Clustering
@@ -86,7 +41,6 @@ Lectures notes [https://community.deeplearning.ai/t/pds-course-1-lecture-notes/4
 * **Computer vision**
 * **Text Analysis**
 * **Natural Language Processing**
-
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-11-06 at 8.42.46 AM.png" alt=""><figcaption></figcaption></figure>
 
@@ -96,7 +50,7 @@ More specifically, you will perform multi-class classification for sentiment ana
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-10-26 at 2.45.35 PM (2).png" alt=""><figcaption></figcaption></figure>
 
-# Data Bias and Feature Importance
+## Data Bias and Feature Importance
 
 * Describe the concept of data bias and compare popular bias metrics
 * Demonstrate how to detect data bias
@@ -107,7 +61,7 @@ More specifically, you will perform multi-class classification for sentiment ana
 
 <figure><img src="../.gitbook/assets/statisticalbias.png" alt="" width="188"><figcaption></figcaption></figure>
 
-## Statistical bias
+### Statistical bias
 
 Statistical bias exists in numerous stages of the data collection and analysis process, including the source of the data, the methods used to collect the data, the [estimator](https://en.wikipedia.org/wiki/Estimator) chosen, and the methods used to analyze the data
 
@@ -127,7 +81,7 @@ In all cases, the bias in the data leads to models that might not work as expect
 
 {% embed url="https://www.youtube.com/watch?v=PdXDLNNXPik" %}
 
-### Statistical bias causes
+#### Statistical bias causes
 
 1. **Activity Bias (Social Media Content)**: This arises from human-generated content, especially on social media. A small percentage of the population actively participates on these platforms, so the data collected is not representative of the entire population.
 2. **Societal Bias (Human-generated content)**: This bias is present in data generated by humans, both on and off social media. It emerges from pre-existing societal notions. Since everyone has unconscious biases, the data they produce can reflect these biases.
@@ -140,7 +94,7 @@ In all cases, the bias in the data leads to models that might not work as expect
 
 Given these potential sources of bias, it's vital to monitor and detect biases in datasets continuously, both before and after training models. The focus is on identifying these biases and imbalances in the pre-training datasets.
 
-### What are facets?
+#### What are facets?
 
 A facet of a dataset refers to a specific feature or attribute within that dataset that is of particular interest, especially when analyzing for imbalances, biases, or other specific characteristics. In essence, a facet is a dimension or aspect of the data that one wants to examine more closely or treat as a sensitive attribute. Analyzing facets allows for a more granular understanding of how different attributes or features may be distributed or represented within the dataset.
 
@@ -152,7 +106,7 @@ Examples of facets
 4. **Education Level as a Facet**: In a dataset of job applicants, education level might be a facet of interest. By examining the hiring rates across different education levels, you could assess if there's an unintentional bias towards candidates with a certain educational background.
 5. **Ethnicity as a Facet**: If you're working with a dataset of loan applications, ethnicity might be a facet you'd want to examine closely. Analyzing loan approval rates across different ethnic groups can help uncover any potential biases in the loan approval process.
 
-### Measuring Statistical Bias
+#### Measuring Statistical Bias
 
 Statistical bias and imbalances in datasets can arise due to various reasons. To quantify these imbalances, specific metrics target different facets of your dataset. A facet refers to a sensitive or important feature in your dataset you want to assess for imbalances. For instance, in a product review dataset, the product category might be a facet of interest.
 
@@ -168,7 +122,7 @@ Two key metrics are:
 
 [Measure pre-training bias - Amazon Sagemaker](https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-measure-data-bias.html)
 
-### Approaches to Statistical Bias Detection
+#### Approaches to Statistical Bias Detection
 
 There are two primary tools for detecting statistical bias in datasets: SageMaker Data Wrangler and SageMaker Clarify.
 
@@ -181,7 +135,7 @@ There are two primary tools for detecting statistical bias in datasets: SageMake
    * **Features**: It can scale out the bias detection process using a construct known as processing jobs, which lets users configure a distributed cluster for executing bias detection at a larger scale.
    * **Use Cases**: Ideal for analyzing large data volumes, like millions of product reviews, to detect bias. It leverages the scalability and capacity of the Cloud.
 
-## What is feature importance?
+### What is feature importance?
 
 In machine learning (ML) engineering, "feature importance" refers to a method or metric that helps determine the significance or contribution of individual features (or variables) to the predictive power of a model. Understanding feature importance is crucial for several reasons:
 
@@ -202,7 +156,7 @@ Various algorithms provide different methods to calculate feature importance. Fo
 
 {% embed url="https://www.youtube.com/watch?v=cTa5HYCxTVg&t=7s" %}
 
-## Automated Machine Learning - AutoML
+### Automated Machine Learning - AutoML
 
 * Ability to reduce Time to market
 * Lack of ML skillsets
@@ -287,7 +241,7 @@ paper
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-11-06 at 8.39.43 AM.png" alt=""><figcaption></figcaption></figure>
 
-### Why use built-in algorithms?
+#### Why use built-in algorithms?
 
 * Implementation is highly highly-optimized and scalable (shift between CPU tp GPU as simple as a parameter of type of machine)
 * Focus more on domain-specific tasks rather than managing low-level model code and infrastructure
@@ -295,11 +249,11 @@ paper
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-11-06 at 8.40.36 AM.png" alt=""><figcaption></figcaption></figure>
 
-### ML types tasks and built-in algorithms
+#### ML types tasks and built-in algorithms
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-11-06 at 8.42.46 AM.png" alt=""><figcaption></figcaption></figure>
 
-#### Classification and Regression in Machine Learning
+**Classification and Regression in Machine Learning**
 
 **Classification Algorithms**
 
@@ -337,11 +291,11 @@ paper
 * **Evaluation Metrics**: Classification uses accuracy, precision, recall, etc., whereas regression uses Mean Squared Error (MSE), R-squared, etc.
 * **Nature of Prediction**: Classification provides a label (like 'cat' or 'dog'), while regression provides a quantifiable prediction (like '24.5 degrees Celsius').
 
-### Classification and Regression - Tabular data
+#### Classification and Regression - Tabular data
 
 <table><thead><tr><th width="318">Example problems and use cases</th><th width="237.33333333333331">Problem types</th><th>Built-in algorithms</th></tr></thead><tbody><tr><td>Predict if an item belongs to a category: an email spam filter</td><td>Binary/multi-class classification</td><td>XGBoost, K-Nearest Neighbors</td></tr><tr><td>Predict a numeric/continuous value: estimate the value of a house</td><td>Regression</td><td>Linear Learner, XGboost</td></tr><tr><td>Predict sales on a new product based on previous sales data</td><td>Time-series forecasting</td><td>DeepAR Forecasting</td></tr></tbody></table>
 
-### Clustering
+#### Clustering
 
 | Example problem and use cases                                             | Problema type                          | Built-in algorithms                                         |
 | ------------------------------------------------------------------------- | -------------------------------------- | ----------------------------------------------------------- |
@@ -352,7 +306,7 @@ paper
 |                                                                           |                                        |                                                             |
 |                                                                           |                                        |                                                             |
 
-### Image processing
+#### Image processing
 
 | Example problems and uses cases                 | Problem types        | Buil-in algoritms                                       |
 | ----------------------------------------------- | -------------------- | ------------------------------------------------------- |
@@ -360,7 +314,7 @@ paper
 | Detect people and objects in an image           | Object detection     | Object detection                                        |
 | Self-driven cars identify objects in their path | Computer vision      | Semantic Segmentation                                   |
 
-### Text analysis
+#### Text analysis
 
 | Example problems and use cases       | Problem types       | Built-in algoritms   |
 | ------------------------------------ | ------------------- | -------------------- |
@@ -369,11 +323,11 @@ paper
 | Transcribe call center conversations | Speech-to-text      | Sequence-to-sequence |
 | Classify reviews into categories     | Text classification | Blazing Text         |
 
-### Evolution of text analysis algorithms
+#### Evolution of text analysis algorithms
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-11-09 at 9.22.11 AM.png" alt=""><figcaption></figcaption></figure>
 
-### Additional reading material
+#### Additional reading material
 
 * [Word2Vec algorithm](https://arxiv.org/pdf/1301.3781.pdf)
 * [GloVe algorithm](https://www.aclweb.org/anthology/D14-1162.pdf)
@@ -386,15 +340,15 @@ paper
 * [Built-in algorithms](https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html)
 * [Amazon SageMaker BlazingText](https://docs.aws.amazon.com/sagemaker/latest/dg/blazingtext.html)
 
-## Build, Train, and Deploy ML Pipelines using BERT
+### Build, Train, and Deploy ML Pipelines using BERT
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-11-12 at 10.10.10 AM.png" alt=""><figcaption></figcaption></figure>
 
-### Feature Engineering
+#### Feature Engineering
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-11-12 at 10.11.36 AM.png" alt=""><figcaption></figcaption></figure>
 
-#### Learning objective
+**Learning objective**
 
 * Describe the concept of feature engineering
 * Apply feature engineering to prepare datasets for training
@@ -403,7 +357,7 @@ Feature engineering in machine learning is like **picking the right ingredients 
 
 <figure><img src="https://files.oaiusercontent.com/file-LoM3VNjoTq1bTJSklCgMrAWl?se=2023-11-12T16%3A08%3A39Z&#x26;sp=r&#x26;sv=2021-08-06&#x26;sr=b&#x26;rscc=max-age%3D31536000%2C%20immutable&#x26;rscd=attachment%3B%20filename%3D8b1f690b-1274-4767-b3ad-361d175a8169.webp&#x26;sig=bkw1IKTDYukJgRWi1sTaarHVcMlQdqA2xJaUXFoNEjY%3D" alt="" width="375"><figcaption></figcaption></figure>
 
-#### Feature engineering steps
+**Feature engineering steps**
 
 1. **Selecting the Right Features**: This is like choosing ingredients that will make your dish flavorful. In machine learning, you pick the most relevant and useful data (features) that can help your model learn and make accurate predictions.
    1. Reduce feature dimensionality
@@ -415,15 +369,15 @@ Feature engineering in machine learning is like **picking the right ingredients 
 4. **Creating New Features**: Imagine you're cooking and you decide to mix two ingredients to create a new flavour. In machine learning, you can combine or manipulate existing data features to create new ones that might give your model more insight.
    1. Lead to more accurate predictions
 
-#### Feature engineering Pipeline
+**Feature engineering Pipeline**
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-11-12 at 10.15.16 AM.png" alt=""><figcaption></figcaption></figure>
 
-#### Split dataset
+**Split dataset**
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-11-13 at 9.53.49 AM.png" alt=""><figcaption></figcaption></figure>
 
-## Feature store
+### Feature store
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-11-12 at 10.16.24 AM.png" alt=""><figcaption></figcaption></figure>
 
@@ -431,13 +385,13 @@ Feature engineering in machine learning is like **picking the right ingredients 
 * Reusable
 * Discoverable
 
-### AWS Sagemaker feature store
+#### AWS Sagemaker feature store
 
 * Store and server features
 * Reduce skew
 * Real-time & batch
 
-#### BERT vs BlazingText
+**BERT vs BlazingText**
 
 **BERT** uses a bidirectional transformer architecture and therefore generates contextual embeddings. If the same word is used in different ways, BERT will capture different meanings and therefore produce 2 different vectors to represent the different meanings.
 
@@ -456,24 +410,24 @@ Feature engineering in machine learning is like **picking the right ingredients 
 | **Scalability**           | Resource-intensive, suitable for more complex NLP tasks.                                                      | Designed for high performance and scalability, particularly on AWS.                                   |
 | **Flexibility**           | Highly flexible for a wide range of NLP tasks.                                                                | Efficient for generating word embeddings but less flexible for context-dependent tasks.               |
 
-#### [https://huggingface.co/blog/bert-101#1-what-is-bert-used-for](https://huggingface.co/blog/bert-101#1-what-is-bert-used-for)
+[**https://huggingface.co/blog/bert-101#1-what-is-bert-used-for**](https://huggingface.co/blog/bert-101#1-what-is-bert-used-for)
 
-#### references:
+**references:**
 
 * [A few useful things to know about Machine Learning](https://homes.cs.washington.edu/\~pedrod/papers/cacm12.pdf)
 * [How to avoid machine learning pitfalls a guide for academic researchers](https://arxiv.org/pdf/2108.02497.pdf)
 * [Tidy Data](https://www.jstatsoft.org/article/view/v059i10)
 * [Fundamental Techniques of Feature Engineering for Machine Learning](https://towardsdatascience.com/feature-engineering-for-machine-learning-3a5e293a5114)
 
-### Train, Debug and Profile a Machine Learning Model
+#### Train, Debug and Profile a Machine Learning Model
 
-### Build-in algorithms versus pre-trained models
+#### Build-in algorithms versus pre-trained models
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-11-14 at 12.02.58 PM.png" alt=""><figcaption></figcaption></figure>
 
-### Build-in algorithms versus pre-trained models
+#### Build-in algorithms versus pre-trained models
 
-#### Built-in Algorithms
+**Built-in Algorithms**
 
 1. **Definition**: Built-in algorithms are ready-to-use algorithms provided by machine learning platforms like Amazon SageMaker. These algorithms are designed to be applied directly to your data without the need for designing and coding the algorithm from scratch.
 2. **Customization**: They offer limited customization compared to designing your own model. You can tweak certain parameters, but the core algorithmic structure remains the same.
@@ -485,7 +439,7 @@ Feature engineering in machine learning is like **picking the right ingredients 
    * **Less Flexibility**: Less flexibility in algorithm modification.
    * **Generalization**: May not be well-suited for highly specific or novel tasks that require unique model architectures.
 
-#### Pre-trained Models
+**Pre-trained Models**
 
 1. **Definition**: Pre-trained models are models that have already been trained on a large dataset, usually on a general task like image recognition, language processing, etc. They are used as a starting point for further training on a specific task (a process known as transfer learning).
 2. **Customization**: They offer more flexibility. You can fine-tune these models on your specific dataset, adapting them to your particular needs.
@@ -497,18 +451,18 @@ Feature engineering in machine learning is like **picking the right ingredients 
    * **Requirement of Domain Knowledge**: Requires understanding of how to fine-tune and adapt them to your specific task.
    * **Computational Resources**: Depending on the model size and complexity, fine-tuning can still require significant computational resources.
 
-#### Conclusion
+**Conclusion**
 
 * **Built-in Algorithms**: Best for straightforward applications, ease of use, and when you need a quick deployment.
 * **Pre-trained Models**: Best for complex tasks, achieving high accuracy, and when dealing with tasks where data collection is challenging.
 
-### Model pre-trained and fine tunning
+#### Model pre-trained and fine tunning
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-11-14 at 12.06.49 PM.png" alt=""><figcaption></figcaption></figure>
 
-###
+####
 
-### Training of a custom model
+#### Training of a custom model
 
 * **Training NLP Models**: Training models like BERT from scratch is time-consuming and resource-intensive, often requiring days and powerful CPUs or GPUs.
 * **Pretrained Models**: There's a wealth of pre-trained models available for adaptation to specific datasets and use cases.
@@ -545,7 +499,7 @@ Feature engineering in machine learning is like **picking the right ingredients 
    * These changes aim to improve RoBERTa's performance in NLP tasks, like text classification.
 6. **Week's Project**: You'll be using a pre-trained RoBERTa model from Hugging Face and fine-tuning it for sentiment analysis of product reviews, classifying them into three sentiment categories.
 
-#### Debug and Profile models
+**Debug and Profile models**
 
 A machine learning (ML) training job can have problems such as overfitting, saturated activation functions, and vanishing gradients, which can compromise model performance.
 
@@ -589,7 +543,7 @@ Metrics:
   * scalar values (accuracy and loss)
   * Matrices (weights, gradients, input layers, and output layers)
 
-#### Monitor and profile system resource utilization
+**Monitor and profile system resource utilization**
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-11-14 at 12.11.27 PM.png" alt=""><figcaption></figcaption></figure>
 
@@ -605,7 +559,7 @@ References:
 * [Amazon SageMaker Debugger (Developer Guide)](https://docs.aws.amazon.com/sagemaker/latest/dg/train-debugger.html)
 * [Amazon SageMaker Debugger (GitHub)](https://github.com/awslabs/sagemaker-debugger)
 
-## Deploy End-to-end machine learning pipelines
+### Deploy End-to-end machine learning pipelines
 
 * Describe the concept of machine learning operations (MLOps) and pipelines
 * Compare pipeline orchestration and automation
@@ -630,9 +584,9 @@ This notebook focuses on the following features of Amazon SageMaker Pipelines:
 
 {% embed url="https://www.youtube.com/watch?v=ayzOzZGHZy4&list=PLnSYPjg2dHQKdig0vVbN-ZnEU0yNJ1mo5" %}
 
-### Optimize ML Models and Deploy Human-in-the-Loop Pipelines
+#### Optimize ML Models and Deploy Human-in-the-Loop Pipelines
 
-#### Learning Objectives
+**Learning Objectives**
 
 ***
 
@@ -646,13 +600,13 @@ This notebook focuses on the following features of Amazon SageMaker Pipelines:
 * Describe the concept of model evaluation
 * Demonstrate how to evaluate a model
 
-### Advanced Model training
+#### Advanced Model training
 
-#### Model tuning
+**Model tuning**
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-11-16 at 9.36.54 AM.png" alt=""><figcaption></figcaption></figure>
 
-#### Manual Model Tuning
+**Manual Model Tuning**
 
 1. **What It Is**: Manual model tuning involves manually adjusting the hyperparameters of a machine learning model. Hyperparameters are the configuration settings used to structure the learning process. They are not learned from the data but are set prior to the training process.
 2. **Process**:
@@ -667,7 +621,7 @@ This notebook focuses on the following features of Amazon SageMaker Pipelines:
    * **Expertise-Dependent**: Requires significant expertise in machine learning and the specific model being used.
    * **Risk of Overfitting**: Manual tuning might lead to overfitting if not done carefully.
 
-#### Automatic Model Tuning (Hyperparameter Optimization)
+**Automatic Model Tuning (Hyperparameter Optimization)**
 
 1. **What It Is**: Automatic model tuning, also known as hyperparameter optimization, uses algorithms to automatically search for the optimal set of hyperparameters for a given model.
 2. **Techniques**:
@@ -684,16 +638,16 @@ This notebook focuses on the following features of Amazon SageMaker Pipelines:
    * **Lack of Intuition**: May not provide as much insight into how each hyperparameter affects the model's performance.
    * **Overfitting Risk**: There's still a risk of overfitting, especially if the search space is not well-defined.
 
-#### Choosing Between Manual and Automatic Tuning
+**Choosing Between Manual and Automatic Tuning**
 
 * **Complexity of the Model**: For more complex models, automatic tuning might be more feasible.
 * **Available Resources**: Consider computational resources and time.
 * **Expertise**: If you have significant expertise, manual tuning might yield better-tuned models.
 * **Project Stage**: Early experimentation might benefit from manual tuning for insights, while later stages might leverage automatic tuning for efficiency.
 
-### Types of automatic model tunning
+#### Types of automatic model tunning
 
-#### Grid Search
+**Grid Search**
 
 * **Definition**: A method that systematically works through multiple combinations of parameter tunes, cross-validating as it goes to determine which tune gives the best performance.
 * **Process**:
@@ -708,7 +662,7 @@ This notebook focuses on the following features of Amazon SageMaker Pipelines:
   * Computationally Expensive: Can be very slow, especially with large grids.
   * Limited by Grid Resolution: May miss the optimal set if it's not included in the predefined grid.
 
-#### Random Search
+**Random Search**
 
 * **Definition**: Randomly samples the search space and evaluates sets from a specified probability distribution.
 * **Process**:
@@ -723,7 +677,7 @@ This notebook focuses on the following features of Amazon SageMaker Pipelines:
   * Randomness: Might miss optimal parameters.
   * No Guarantee of Best Solution: Less systematic than Grid Search.
 
-#### Bayesian Optimization
+**Bayesian Optimization**
 
 * **Definition**: Uses a probabilistic model to guide the search for the best hyperparameters, balancing exploration and exploitation.
 * **Process**:
@@ -737,7 +691,7 @@ This notebook focuses on the following features of Amazon SageMaker Pipelines:
   * Complexity: More complex to understand and implement than Grid or Random Search.
   * Computation Overhead: Building and updating the probabilistic model can be computationally intensive.
 
-#### Hyperband
+**Hyperband**
 
 * **Definition**: An extension of Random Search which uses a novel bandit-based approach to hyperparameter optimization.
 * **Process**:
@@ -751,13 +705,13 @@ This notebook focuses on the following features of Amazon SageMaker Pipelines:
   * Partial Training: Some models might be discarded too early, potentially missing good configurations.
   * Complexity: More complex and nuanced than basic methods like Grid or Random Search.
 
-### Tune BERT Text classifier
+#### Tune BERT Text classifier
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-11-16 at 10.00.40 AM.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-11-16 at 10.02.25 AM.png" alt=""><figcaption></figcaption></figure>
 
-#### Warm types:
+**Warm types:**
 
 * IDENTICAL\_DATA\_AND\_ALGORITHM
   * Same input data and training data
@@ -765,7 +719,7 @@ This notebook focuses on the following features of Amazon SageMaker Pipelines:
 * TRANSFER\_LEARNING
   * Update training data and different versions of training algorithm
 
-### Best Practices - Sagemaker HyperParameter Tuning
+#### Best Practices - Sagemaker HyperParameter Tuning
 
 * Select a small number of hyperparameters
 * Select a small range for hyperparameters
@@ -773,14 +727,14 @@ This notebook focuses on the following features of Amazon SageMaker Pipelines:
 * Enable early stop to save tuning time and costs
 * Select a small number of concurrent training jobs
 
-### Best practices - Monitoring Training Resources
+#### Best practices - Monitoring Training Resources
 
 * Right size computer resources
 * Requires empirical testing
 * Amazon CloudWatch Metrics
 * Insights from Amazon SageMaker Debugger
 
-### Machine Learning - Checkpointing
+#### Machine Learning - Checkpointing
 
 * Save state of ML models during training
 * Checkpoints: Snapshot of the model
@@ -790,28 +744,26 @@ This notebook focuses on the following features of Amazon SageMaker Pipelines:
   * Optimizer
 * Frequency and number of checkpoints
 
-### Distributed Training Strategies
+#### Distributed Training Strategies
 
 * Increased training data volume
 * Increased model size and complexity
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-11-16 at 10.17.14 AM.png" alt=""><figcaption></figcaption></figure>
 
-#### Data Parallelism
+**Data Parallelism**
 
 * Training data split up
 * The model replicated on all nodes
 
-#### Model Parallelism
+**Model Parallelism**
 
 * Training data replicated
 * Model split up on all nodes
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-11-16 at 5.19.45 PM.png" alt=""><figcaption></figcaption></figure>
 
-
-
-#### Advanced model deployment and monitoring
+**Advanced model deployment and monitoring**
 
 Deploy models with A/B testing, monitor model performance, and detect drift from baseline metrics.
 
@@ -826,21 +778,17 @@ Deploy models with A/B testing, monitor model performance, and detect drift from
 * Discuss how to use Amazon SageMaker to perform A/B testing
 * Demonstrate deploying a model version to Amazon SageMaker using A/B testing
 
-
-
-#### Data Labeling:
+**Data Labeling:**
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-11-19 at 1.45.46 PM (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-11-19 at 1.46.15 PM.png" alt=""><figcaption></figcaption></figure>
 
-**What is data labelling?**&#x20;
+**What is data labelling?**
 
 * Process of identifying raw data and adding one or more meaningful and informative labels
 * Labels provide context for machine learning models to learn from supervised learning
 * Correctly labelled datasets are often called "ground truth"
-
-
 
 **Common types of data labelling**
 
@@ -856,13 +804,11 @@ Deploy models with A/B testing, monitor model performance, and detect drift from
 * High accuracy
 * Time-consuming
 
-**How can data labelling be done efficiently?**&#x20;
+**How can data labelling be done efficiently?**
 
 * Access to the additional human workforce
 * Automated data labelling capabilities
 * Assistive labeling features
-
-
 
 **AWS Sagemaker ground truth**
 
@@ -870,9 +816,7 @@ Deploy models with A/B testing, monitor model performance, and detect drift from
 
 **Steps**
 
-Setup input data >> Selecting labeling task >> Select human workforce >> Create task UI&#x20;
-
-
+Setup input data >> Selecting labeling task >> Select human workforce >> Create task UI
 
 **Best practices for data labelling:**
 
@@ -880,13 +824,9 @@ Setup input data >> Selecting labeling task >> Select human workforce >> Create 
 * Consolidate annotations to improve label quality
 * Verify and adjust labels
 * Use automated data labelling on large datasets (Active Learning)
-* Re-use prior labelling jobs to create hierarchical labels&#x20;
+* Re-use prior labelling jobs to create hierarchical labels
 
-
-
-#### Human in the Loop Pipelines
-
-
+**Human in the Loop Pipelines**
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-11-19 at 2.00.49 PM.png" alt=""><figcaption></figcaption></figure>
 
@@ -897,21 +837,10 @@ Setup input data >> Selecting labeling task >> Select human workforce >> Create 
 * Need to write custom software to manage review tasks
 * Difficult to achieve high review accuracy
 
-#### Amazon A2I
+**Amazon A2I**
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-11-19 at 2.03.08 PM.png" alt=""><figcaption></figcaption></figure>
 
 **Steps**
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-11-19 at 2.04.23 PM.png" alt=""><figcaption></figcaption></figure>
-
-
-
-
-
-
-
-
-
-
-
