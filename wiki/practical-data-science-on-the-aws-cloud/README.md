@@ -4,35 +4,38 @@ Deep learning notes from the course [https://www.coursera.org/learn/aws-practica
 
 Lectures notes [https://community.deeplearning.ai/t/pds-course-1-lecture-notes/48242](https://community.deeplearning.ai/t/pds-course-1-lecture-notes/48242)
 
-<figure><img src="https://files.oaiusercontent.com/file-yifqX94wTANjHDKjDuoEIFYE?se=2023-11-11T14%3A40%3A59Z&#x26;sp=r&#x26;sv=2021-08-06&#x26;sr=b&#x26;rscc=max-age%3D31536000%2C%20immutable&#x26;rscd=attachment%3B%20filename%3Df7b7bbb4-0242-434b-8f4a-49874e4e9826.png&#x26;sig=YnXthEbDq1ABmicYU99A7jh8uU88C2LTDrPHA5WhN88%3D" alt=""><figcaption></figcaption></figure>
-
 <figure><img src="../.gitbook/assets/machine-learning-workflow.png" alt=""><figcaption><p>Machine Learning Workflow</p></figcaption></figure>
 
 ### Popular ML tasks and learning paradigms
 
-* **Supervised learning:** Classification & Regression
+* **Supervised learning**: Classification & Regression
 * **Unsupervised** Clustering
 * **Reinforcement learning**
 * **Computer vision**
 * **Text Analysis**
+* **Natural Language Processing**
+
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-11-06 at 8.42.46 AM.png" alt=""><figcaption></figcaption></figure>
 
 **The task:**
 
-More specifically, you will perform multi-class classification for sentiment analysis of product reviews
+More specifically, you will perform multi-class classification for sentiment analysis of product reviews, using the Amazon SageMaker built-in BlazingText algorithm. You will train a model to predict whether a review is positive, negative, or neutral. You will also learn how to deploy the model and make predictions.
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-10-26 at 2.45.35 PM (2).png" alt=""><figcaption></figcaption></figure>
 
-## Data Bias and Feature Importance
+# Data Bias and Feature Importance
 
 * Describe the concept of data bias and compare popular bias metrics
 * Demonstrate how to detect data bias
 * Understand feature importance
+* Demonstrate how to detect feature importance
+* Demonstrate how to use SageMaker Clarify to detect bias and feature importance
+* Demonstrate how to use SageMaker Data Wrangler to detect bias and feature importance
 
 <figure><img src="../.gitbook/assets/statisticalbias.png" alt="" width="188"><figcaption></figcaption></figure>
 
-### Statistical bias
+## Statistical bias
 
 Statistical bias exists in numerous stages of the data collection and analysis process, including the source of the data, the methods used to collect the data, the [estimator](https://en.wikipedia.org/wiki/Estimator) chosen, and the methods used to analyze the data
 
@@ -106,7 +109,7 @@ There are two primary tools for detecting statistical bias in datasets: SageMake
    * **Features**: It can scale out the bias detection process using a construct known as processing jobs, which lets users configure a distributed cluster for executing bias detection at a larger scale.
    * **Use Cases**: Ideal for analyzing large data volumes, like millions of product reviews, to detect bias. It leverages the scalability and capacity of the Cloud.
 
-### What is feature importance?
+## What is feature importance?
 
 In machine learning (ML) engineering, "feature importance" refers to a method or metric that helps determine the significance or contribution of individual features (or variables) to the predictive power of a model. Understanding feature importance is crucial for several reasons:
 
