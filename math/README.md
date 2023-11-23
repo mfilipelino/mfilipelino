@@ -80,6 +80,18 @@ That means adding up the vectors' components
 
 ## Length of a vector
 
+To know how far something moves, or the distance between two things, we can use the length of a vector.
+
+We can use geometry to calculate vector lengths.
+
+<figure><img src=".gitbook/assets/leght-of-a-vector.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/distance-between-vector-heads.png" alt=""><figcaption></figcaption></figure>
+
+By treating a vector and its components as a right triangle, we can apply the **Pythagorean theorem** to find the vector's length.
+
+That lets us find the distance between a pair of objects.
+
 
 
 ## Scaling vectors
