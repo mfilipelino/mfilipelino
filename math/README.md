@@ -23,7 +23,9 @@ A **vector** is a shift in space. We can represent it with an arrow.
 
 <figure><img src=".gitbook/assets/Screen Shot 2023-11-20 at 8.37.14 AM.png" alt=""><figcaption></figcaption></figure>
 
-A vector has a horizontal part and a vertical part, called **components**.
+A vector has a horizontal part and a vertical part, called **components**. The components of a vector are the horizontal and vertical distances that it travels. In $$\mathbf{v} = \begin{pmatrix} a \\ b \end{pmatrix}$$ a nd b are the components
+
+How do we get to the point in the exact middle?
 
 <figure><img src=".gitbook/assets/Screen Shot 2023-11-20 at 8.38.06 AM.png" alt=""><figcaption></figcaption></figure>
 
@@ -39,7 +41,7 @@ Are the vector and point really the same thing?&#x20;
 
 No. One is a **move**, while the other is a **location**
 
-When a vector \<a,b> shifts an object starting from the origin, the object end up at the point (a,b)
+When a vector \<a,b> shifts an object starting from the origin, the object ends up at the point (a,b)
 
 
 
@@ -90,15 +92,25 @@ We can use geometry to calculate vector lengths.
 
 By treating a vector and its components as a right triangle, we can apply the **Pythagorean theorem** to find the vector's length.
 
+$$\|\mathbf{v}\| = \sqrt{(a^2 + b^2}$$)
+
 That lets us find the distance between a pair of objects.
 
 
 
 ## Scaling vectors
 
+Sometimes we need to change a vector's length while maintaining its direction.
 
+<figure><img src=".gitbook/assets/scalar-a-vector.png" alt=""><figcaption></figcaption></figure>
+
+k > 0: Scaling a vector maintains its direction while changing its length.
 
 ## Between two Vectors
+
+Between the heads of two vectors, there are infinitely many points.
+
+How do we get to the point in the exact middle?
 
 
 
