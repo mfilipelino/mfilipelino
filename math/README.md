@@ -116,6 +116,16 @@ How do we get to the point in the exact middle?
 
 ## Moving Along a Line
 
+We can write a vector to move to the point exactly halfway between the heads of two vectors, but how do we locate any point on a line defined by two vectors?
+
+
+
+**Defining a line**
+
+In _Space Game_, the asteroid moves along a linear path.
+
+Let's write an expression with vectors to describe a line.
+
 
 
 ## Transformations with Vectors
