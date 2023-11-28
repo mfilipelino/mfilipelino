@@ -130,7 +130,33 @@ Let's write an expression with vectors to describe a line.
 
 ## Transformations with Vectors
 
+Editing a digital image might involve resizing, flipping, or rotating the shapes within it.
 
+Let's see how computers make those edits, and what vectors have to do with it.
+
+
+
+That's right. **To** **turn** means to spin around a point.
+
+<figure><img src=".gitbook/assets/turn-image.png" alt=""><figcaption></figcaption></figure>
+
+**A flipped** image is a mirror image of the original
+
+<figure><img src=".gitbook/assets/flipped-image.png" alt=""><figcaption></figcaption></figure>
+
+A **resized** image is a scaled copy of the original shape.&#x20;
+
+<figure><img src=".gitbook/assets/resized-image.png" alt=""><figcaption></figcaption></figure>
+
+A **slide** is a movement across the screen without any turning
+
+<figure><img src=".gitbook/assets/slide.png" alt=""><figcaption></figcaption></figure>
+
+
+
+Turns, flips, resizes, and slides are all examples of transformations.
+
+A **transformation** is a rule that is applied to every vector that defines an image.
 
 ## Translations
 

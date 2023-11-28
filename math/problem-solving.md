@@ -23,5 +23,13 @@ So far, we’ve seen how variables represent unknown values. We can do a lot mor
 An **expression** connects numbers and variables with operations such as addition, subtraction, multiplication, and division.
 
 \
+An **equation** is a statement that two expressions have the same value
+
+A **solution to an equation** is a value that, when used in place of a variable, makes the equation true.
+
+Some equations are never true, some are always true, and some are only true for specific values of a variable.
+
+
+
 
 
