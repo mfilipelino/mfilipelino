@@ -160,7 +160,13 @@ A **transformation** is a rule that is applied to every vector that defines an i
 
 ## Translations
 
+A **translation** changes an image's position by sliding it.
 
+For every vector \<x, y> that defines an image, the rule
+
+\<x + a, y + b>
+
+results in a _translation_ of the image by the vector \<a, b>
 
 ## Dilations&#x20;
 
