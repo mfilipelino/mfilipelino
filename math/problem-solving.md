@@ -43,7 +43,11 @@ Expressions are combinations of variables, numbers, and operations. They represe
 
 
 
+#### Working backward:
 
+Equations are made of variables, numbers, and operations.
 
+To solve an equation, we can undo the operations.
 
+When solving an equation, the goal is to find a specific value of the variable that makes the equation true.
 

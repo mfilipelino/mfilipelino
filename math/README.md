@@ -168,9 +168,23 @@ For every vector \<x, y> that defines an image, the rule
 
 results in a _translation_ of the image by the vector \<a, b>
 
+To translate an image to a different position, we add the same vector to all of its defining vectors.
+
 ## Dilations&#x20;
 
+Copies of different sizes can make a design with an appealing pattern.
 
+Let's find a rule that will resize an image.
+
+A **dilation** is a scaled copy of a shape. It's created by scaling each of a shape's vectors by the same factor.
+
+To **dilate** a shape, we scale its vectors — that means multiplying each vector component by a scalar.
+
+**Combining transformations**
+
+<figure><img src=".gitbook/assets/combine-tranformations.png" alt=""><figcaption></figcaption></figure>
+
+## kv + w&#x20;
 
 ## Reflections&#x20;
 
