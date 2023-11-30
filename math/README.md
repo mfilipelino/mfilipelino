@@ -188,5 +188,21 @@ To **dilate** a shape, we scale its vectors — that means multiplying each vect
 
 ## Reflections&#x20;
 
+Every shape with line symmetry has a line that divides it into identical halves. This line is called a line of reflection.
 
+If we think of the two halves as mirror images, the line of reflection represents the mirror.
+
+To **reflect a vector**, move its head in a direction perpendicular to the line of reflection.
+
+Then, continue along the path for the same distance on the other side of the line of reflection.
+
+
+
+<figure><img src=".gitbook/assets/Screen Shot 2023-11-30 at 9.21.54 AM.png" alt=""><figcaption></figcaption></figure>
+
+To **reflect a shape over the y-axis**, change every defining vector ⟨ x , y ⟩ to ⟨ − x , y ⟩ .
+
+<figure><img src=".gitbook/assets/Screen Shot 2023-11-30 at 9.26.48 AM.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/diagonal_line.png" alt=""><figcaption></figcaption></figure>
 
