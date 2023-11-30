@@ -8,3 +8,4 @@
   * [Week 2: Solving system of linear equations](linear-algebra-for-machine-learning-and-data-science/week-2-solving-system-of-linear-equations.md)
   * [Week 3: Vectors and linear transformations](linear-algebra-for-machine-learning-and-data-science/week-3-vectors-and-linear-transformations.md)
   * [Week 4: Determinants and eigenvectors](linear-algebra-for-machine-learning-and-data-science/week-4-determinants-and-eigenvectors.md)
+* [Systems of Equations](systems-of-equations.md)
