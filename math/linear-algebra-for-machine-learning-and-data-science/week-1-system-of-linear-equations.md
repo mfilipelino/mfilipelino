@@ -12,9 +12,11 @@ A **solution to a system of equations** is the one pair or values that makes bot
 
 <figure><img src="../gitbook/assets/systems-of-equations-as-lines.png" alt=""><figcaption></figcaption></figure>
 
-The system of equations can be simplified for the proposal of determining if is singular or not singular&#x20;
+The system of equations can be simplified for the proposal of determining if is singular or not singular
 
-The system of equations as lines in the figure above,  can be simplified since knowing if the system is redundant or contradictory is not usually a question we want to answer:
+The system of equations as lines in the figure above, can be simplified since knowing if the system is redundant or contradictory is not usually a question we want to answer:
+
+![](../.gitbook/assets/linear-independence-between-rows.png)
 
 <figure><img src="../gitbook/assets/system-of-lines-equals-zero.png" alt=""><figcaption></figcaption></figure>
 
@@ -22,18 +24,12 @@ The system of equations as lines in the figure above,  can be simplified since k
 
 <figure><img src="../gitbook/assets/system-of-equations-matrices.png" alt=""><figcaption></figcaption></figure>
 
-#### Linear dependent (singular)  and linear independence ( no singular)
+#### Linear dependent (singular) and linear independence ( no singular)
 
 <figure><img src="../gitbook/assets/linear-independence-between-rows.png" alt=""><figcaption></figcaption></figure>
 
 ### Substitution
 
-
-
 ### Elimination
 
-
-
 ### Linear systems
-
-
