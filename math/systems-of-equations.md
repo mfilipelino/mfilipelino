@@ -6,9 +6,11 @@ description: https://brilliant.org/courses/systems-of-equations/
 
 ### System of equations
 
-
+A **System of equations** is two or more equations with the same variables that express different relationships.
 
 <figure><img src=".gitbook/assets/systems-of-setences.png" alt=""><figcaption></figcaption></figure>
+
+A **solution to a system of equations** is the one pair or values that makes both equations **true**
 
 <figure><img src=".gitbook/assets/systems-of-equations.png" alt=""><figcaption></figcaption></figure>
 
