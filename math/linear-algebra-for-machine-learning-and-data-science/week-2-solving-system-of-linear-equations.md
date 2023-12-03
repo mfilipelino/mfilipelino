@@ -162,3 +162,32 @@ Each step in the process involves elementary row operations, which are basic ope
    * **For Systems of Equations**: In the context of a system of linear equations, the rank tells us about the solvability of the system. If the rank of the coefficient matrix equals the rank of the augmented matrix, the system is consistent; otherwise, it's inconsistent.
    * **For Dependency**: A lower rank than the maximum possible (which is the smaller of the number of rows or columns) indicates linear dependence among the rows or columns.
    * **For Inverse**: A square matrix is invertible if and only if its rank is equal to its dimension
+
+Elementary row operations are fundamental tools in linear algebra used to manipulate matrices, particularly when solving systems of linear equations or finding matrix inverses. These operations can alter the form of a matrix but do not change its essential properties, such as the solution set of a corresponding system of linear equations. There are three types of elementary row operations:
+
+#### 1. Row Swapping (Interchanging Two Rows)
+
+* **Operation**: Switching the positions of two rows in the matrix.
+* **Notation Example**: ( R1 \leftrightarrow R2 ) means swap row 1 (R1) and row 2 (R2).
+* **Purpose**: This operation is useful for positioning a non-zero element in the pivot position or simplifying the matrix for further manipulation.
+
+#### 2. Row Multiplication (Scaling a Row)
+
+* **Operation**: Multiplying all elements of a row by a non-zero scalar.
+* **Notation Example**: ( R1 \rightarrow kR1 ) means multiply every element in row 1 (R1) by a scalar ( k ) (where ( k ) is a non-zero constant).
+* **Purpose**: Used to simplify the elements of a row, such as creating a leading 1 in pivot positions, or to avoid fractions in the row operations.
+
+#### 3. Row Addition (Adding a Multiple of One Row to Another)
+
+* **Operation**: Adding to one row a multiple of another row.
+* **Notation Example**: ( R1 \rightarrow R1 + kR2 ) means add ( k ) times row 2 (R2) to row 1 (R1), where ( k ) is any scalar.
+* **Purpose**: This operation is instrumental in creating zeros in specific positions, particularly when transforming a matrix into its row echelon or reduced row echelon form.
+
+#### Application and Importance
+
+* **Solving Linear Systems**: These operations are the backbone of Gaussian elimination and Gauss-Jordan elimination methods, used for solving systems of linear equations.
+* **Determining Invertibility**: They help in determining whether a matrix is invertible and, if so, in finding its inverse.
+* **Finding Matrix Rank**: By transforming a matrix into its row echelon or reduced row echelon form using these operations, one can easily determine the rank of the matrix.
+
+Crucially, these operations maintain the equivalence of the system of linear equations represented by the matrix. This means that, despite changes in the matrix's appearance, its solution set remains unchanged.
+
