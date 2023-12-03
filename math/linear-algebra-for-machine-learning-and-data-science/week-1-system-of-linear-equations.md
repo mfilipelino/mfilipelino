@@ -16,6 +16,7 @@ The system of equations can be simplified for the proposal of determining if is 
 
 The system of equations as lines in the figure above, can be simplified since knowing if the system is redundant or contradictory is not usually a question we want to answer:
 
+Systems of two linear equations can have zero, one, or infinitely many solutions, which we see from how their graphs interact.
 
 <figure><img src="../.gitbook/assets/system-of-lines-equals-zero.png" alt=""><figcaption></figcaption></figure>
 
@@ -27,8 +28,3 @@ The system of equations as lines in the figure above, can be simplified since kn
 
 <figure><img src="../.gitbook/assets/linear-independence-between-rows.png" alt=""><figcaption></figcaption></figure>
 
-### Substitution
-
-### Elimination
-
-### Linear systems
