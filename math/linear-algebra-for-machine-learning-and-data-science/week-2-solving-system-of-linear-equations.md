@@ -154,3 +154,11 @@ The final REF of the matrix is: \[ \begin{bmatrix} 1 & 0 & | & \frac{1}{7} \ 0 &
 This REF shows that ( x = \frac{1}{7} ) and ( y = \frac{18}{7} ). This is the solution to the original system of equations.
 
 Each step in the process involves elementary row operations, which are basic operations that can be performed on the rows of a matrix without changing its solution set. The goal is to systematically simplify the matrix until the solution can be easily read off from it.
+
+#### What Does the Rank of a Matrix Mean?
+
+1. **Definition**: The rank of a matrix is defined as the maximum number of linearly independent row or column vectors in the matrix. It reflects the dimension of the vector space spanned by its rows or columns.
+2. **Implications**:
+   * **For Systems of Equations**: In the context of a system of linear equations, the rank tells us about the solvability of the system. If the rank of the coefficient matrix equals the rank of the augmented matrix, the system is consistent; otherwise, it's inconsistent.
+   * **For Dependency**: A lower rank than the maximum possible (which is the smaller of the number of rows or columns) indicates linear dependence among the rows or columns.
+   * **For Inverse**: A square matrix is invertible if and only if its rank is equal to its dimension
