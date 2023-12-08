@@ -13,3 +13,16 @@ The rank of a linear transformation:
 Determinant as an area
 
 <figure><img src="../.gitbook/assets/determinant-as-area.png" alt=""><figcaption></figcaption></figure>
+
+Determinant as an area no-singular and singular
+
+
+
+<figure><img src="../.gitbook/assets/determinant-as-an-area.png" alt=""><figcaption></figcaption></figure>
+
+
+
+**Eigenvalues and Eigenvectors**
+
+
+
